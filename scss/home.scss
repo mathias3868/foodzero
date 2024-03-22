@@ -515,7 +515,7 @@
           height: 50px;
           border: transparent;
           background: white;
-          color: white;
+          color: black;
           padding: 5px 10px;
         }
         button {
@@ -564,7 +564,7 @@
 @media (max-width: 250.9px) {
   .container {
     margin: 0;
-    border: $border-solid red;
+    border: $border-solid black;
     width: 100%;
     height: $container-height;
 
