@@ -183,7 +183,7 @@
       }
     }
     .flexbox-3 {
-      @extend .flexbox-2;
+      // @extend .flexbox-2;
       margin: 15% 0;
       column-gap: 20%;
       .col-3 {
@@ -727,7 +727,7 @@
         }
       }
       .flexbox-3 {
-        @extend .flexbox-2;
+        // @extend .flexbox-2;
         margin: 15% 0;
         column-gap: 20%;
         // flex-direction: column;
@@ -1182,8 +1182,8 @@
 @media (min-width: 251px) and (max-width: 350.9px) {
   .container {
     margin: 0;
-    border: $border-solid red;
-    width: 100%;
+    border: $border-solid green;
+    min-width: 100%;
     height: $container-height;
 
     .wrap-1 {
@@ -1331,7 +1331,7 @@
         }
       }
       .flexbox-3 {
-        @extend .flexbox-2;
+        // @extend .flexbox-2;
         margin: 15% 0;
         column-gap: 20%;
         .col-3 {
@@ -1504,6 +1504,7 @@
     .wrap-6 {
       height: 700px;
       background: rgb(228, 240, 245);
+      width: 100%;
       text-align: center;
       h1 {
         font-size: $text-heading-size + 30px;
