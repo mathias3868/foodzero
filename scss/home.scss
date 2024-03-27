@@ -1,5 +1,7 @@
 @import "../scss/variables.scss";
 
+// @import "./mixin";
+
 //flexing
 @mixin flexing {
   display: flex;
@@ -66,7 +68,7 @@
             width: 100px;
             height: 60px;
             position: absolute;
-            border: 1px solid black;
+            border: 1px solid white;
             left: -0px;
             margin-left: 25px;
             bottom: -15px;
@@ -184,6 +186,8 @@
     }
     .flexbox-3 {
       // @extend .flexbox-2;
+      @include flexing;
+      padding: $side-padding;
       margin: 15% 0;
       column-gap: 20%;
       .col-3 {
@@ -558,7 +562,7 @@
   }
 }
 
-// --------------MEDIA QUERIES------------
+// ==============MEDIA QUERIES===============
 
 // XX-SM (<251px)
 @media (max-width: 250.9px) {
@@ -728,14 +732,14 @@
       }
       .flexbox-3 {
         // @extend .flexbox-2;
-        margin: 15% 0;
-        column-gap: 20%;
+        @include flexing;
+        padding: 10px;
         // flex-direction: column;
         flex-wrap: wrap;
         row-gap: 20px;
 
         .col-3 {
-          max-width: 500px;
+          max-width: 100%;
           color: white;
           h3 {
             font-size: 14px;
@@ -743,7 +747,7 @@
             margin: 5px 0;
           }
           small {
-            font-size: 12px;
+            font-size: 14px;
             line-height: 5px;
             // &:nth-last-of-type() {
             //   padding-bottom: 500px;

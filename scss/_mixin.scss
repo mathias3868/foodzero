@@ -1,0 +1,22 @@
+// ==========NAVIGATION BAR================
+
+@mixin navigationbar {
+  position: $myabsolute-p;
+  background-image: url(../images/nav-background.png);
+  background-color: $navigation-color;
+  background-blend-mode: multiply;
+  min-width: 800px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(-150px);
+  padding: 100px;
+  margin: 40px 0 0 170px;
+  display: none;
+  z-index: 1;
+}
+
+@mixin navigationbar-hover {
+  background: #233000;
+  color: white;
+}
