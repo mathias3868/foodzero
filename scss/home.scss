@@ -2712,7 +2712,7 @@
         @include flexing;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 20px;
+        padding: 50px 30px;
         column-gap: 15px;
         // flex-direction: row;
         .col-7 {
@@ -2750,7 +2750,7 @@
       height: 550px;
       .flexbox-8 {
         @include flexing;
-        padding: 50px 20px;
+        padding: 50px 30px;
         column-gap: 20px;
         .col-8 {
           max-width: 500px;
@@ -2797,7 +2797,7 @@
         line-height: 25px;
       }
       .col-9 {
-        padding: 50px 20px;
+        padding: 50px 30px;
         .all-input {
           display: flex;
           flex-direction: column;
@@ -2854,7 +2854,7 @@
       }
       .flexbox-9 {
         @include flexing;
-        padding: 80px 20px;
+        padding: 80px 30px;
         align-items: center;
         column-gap: 15px;
         .col-10 {
@@ -2916,7 +2916,7 @@
     footer {
       height: 400px;
       background: $bg-color;
-      padding: 70px 20px;
+      padding: 70px 30px;
       .flexbox-11 {
         @include flexing;
         border-bottom: 1px dashed white;
@@ -3011,7 +3011,7 @@
 
     .wrap-1 {
       background: $bg-color;
-      height: 1300px;
+      height: 1700px;
       // padding: $side-padding-20px, $side-padding;
       color: $text-color;
       font-family: $font-family;
@@ -3026,7 +3026,7 @@
           gap: $flex-gap;
 
           h2 {
-            font-size: 23px;
+            font-size: 25px;
             font-weight: $text-weight + 300;
             text-align: center;
             z-index: 1;
@@ -3088,10 +3088,10 @@
             align-items: center;
             column-gap: 30px;
             padding: 0 30px;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: $text-weight;
             a {
-              padding: 5px 20px;
+              padding: 5px 15px;
               border: 1px solid white;
               text-decoration: none;
               color: black;
@@ -3108,7 +3108,7 @@
           // right: -50px;
 
           h1 {
-            font-size: 4rem;
+            font-size: 5rem;
             color: white;
             position: absolute;
             z-index: 1;
@@ -3116,8 +3116,8 @@
           p {
             color: white;
             line-height: 25px;
-            font-size: 16px;
-            margin-top: 80%;
+            font-size: 18px;
+            margin-top: 60%;
           }
           .strong {
             transform: rotateZ(90deg);
@@ -3132,25 +3132,25 @@
           }
         }
         .heading-img {
-          max-width: 400px;
+          max-width: 500px;
           // position: $myrelative-p;
           img {
             position: $myrelative-p;
             top: 25%;
-            right: -20%;
-            width: 80%;
+            right: -10%;
+            width: 90%;
             // right: 10%;
           }
           .spicy {
             @include flexing;
             justify-content: space-between;
-            column-gap: 5px;
+            column-gap: 10px;
             position: absolute;
-            top: 102%;
-            right: 25%;
-            max-width: 400px;
+            top: 130%;
+            right: 30%;
+            max-width: 500px;
             img {
-              width: 30%;
+              width: 35%;
             }
           }
           // .clear {
@@ -3162,19 +3162,19 @@
         // @extend .flexbox-2;
         @include flexing;
         padding: 30px;
-        margin: 25% 0;
-        column-gap: 25%;
+        margin: 20% 0;
+        column-gap: 20%;
         .col-3 {
           max-width: 900px;
           color: white;
           h3 {
-            font-size: 25px;
+            font-size: 27px;
             line-height: 30px;
             margin: 20px 0;
           }
           small {
-            font-size: 15px;
-            line-height: 20px;
+            font-size: 18px;
+            line-height: 25px;
             padding-bottom: 30px;
           }
           img {
@@ -3191,20 +3191,20 @@
         @include flexing;
         .background {
           // min-width: 500px;
-          max-width: 300px;
+          max-width: 400px;
           img {
             width: 100%;
           }
         }
         .background-text {
-          padding: 60px 0 0 30px;
+          padding: 80px 0 0 30px;
           // min-width: 600px;
           h1 {
             font-size: 50px;
             font-weight: 600;
           }
           p {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
           }
         }
@@ -3213,18 +3213,21 @@
         @include flexing;
         padding: 20px 30px;
         .col-4 {
-          max-width: 400px;
+          max-width: 700px;
           p {
             font-size: 18px;
+            font-weight: 400px;
             border-bottom: 1px dashed black;
             text-align: right;
           }
           h3 {
-            font-size: 20px;
+            font-size: 28px;
             line-height: 50px;
+            font-weight: 600px;
           }
           small {
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 400px;
           }
         }
       }
@@ -3232,7 +3235,7 @@
 
     .wrap-3 {
       background: rgb(228, 240, 245);
-      height: 650px;
+      height: 850px;
       .flexbox-6 {
         @include flexing;
         justify-content: space-around;
@@ -3243,32 +3246,32 @@
           .man-prop {
             position: relative;
             img {
-              width: 300px;
+              width: 400px;
             }
           }
           .wooden {
             position: absolute;
-            bottom: -380%;
+            bottom: -495%;
             left: 3%;
             img {
-              width: 150px;
+              width: 200px;
             }
           }
         }
         .col-6 {
-          max-width: 400px;
+          max-width: 500px;
           h1 {
-            font-size: 25px;
+            font-size: 30px;
             font-weight: 600;
           }
           p {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
-            line-height: 20px;
+            line-height: 25px;
           }
           img {
-            margin: 50px 0 0 110px;
-            width: 300px;
+            margin: 50px 0 0 90px;
+            width: 400px;
           }
         }
       }
@@ -3276,38 +3279,38 @@
 
     .wrap-4 {
       background: white;
-      height: 350px;
+      height: 450px;
       .flexbox-7 {
         @include flexing;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 20px;
+        padding: 80px 30px;
         column-gap: 15px;
         // flex-direction: row;
         .col-7 {
-          max-width: 400px;
+          max-width: 500px;
           text-align: center;
           .images {
-            height: 150px;
-            width: 150px;
-            padding: 30px;
+            height: 170px;
+            width: 170px;
+            padding: 40px;
             // border: 1px solid black;
             border-radius: 50%;
             background: rgb(194, 190, 190);
             box-shadow: 0 0 4px white;
             margin: 0 0 0 35px;
             img {
-              width: 80px;
+              width: 90px;
             }
           }
           h3 {
-            font-size: 20px;
-            padding-top: 20px;
+            font-size: 25px;
+            padding-top: 30px;
             font-weight: 600;
           }
           p {
-            font-size: 16px;
-            line-height: 15px;
+            font-size: 18px;
+            line-height: 25px;
             font-weight: 400px;
           }
         }
@@ -3316,37 +3319,38 @@
 
     .wrap-5 {
       background: white;
-      height: 550px;
+      height: 700px;
       .flexbox-8 {
         @include flexing;
-        padding: 50px 20px;
-        column-gap: 20px;
+        padding: 50px 30px;
+        column-gap: 30px;
         .col-8 {
-          max-width: 500px;
+          max-width: 600px;
           img {
             position: relative;
-            width: 350px;
+            width: 450px;
           }
           p {
-            padding: 5px 10px;
+            padding: 8px 15px;
             background: greenyellow;
             color: white;
-            font-size: 14px;
+            font-size: 18px;
             position: absolute;
             border: transparent;
-            top: 438.8%;
-            margin: 90% 0 0 37%;
+            top: 538.3%;
+            margin: 90% 0 0 36%;
           }
           h3 {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 600;
-            margin-top: 20px;
+            margin-top: 30px;
             border-bottom: 1px dashed black;
-            line-height: 25px;
+            line-height: 30px;
           }
           small {
-            font-size: 16px;
-            line-height: 15px;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400px;
           }
         }
       }
@@ -3357,41 +3361,44 @@
       background: rgb(228, 240, 245);
       text-align: center;
       h1 {
-        font-size: 24px;
-        padding: 80px 0 0 0;
+        font-size: 30px;
+        padding: 100px 0 0 0;
         line-height: 40px;
       }
       small {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 25px;
+        font-weight: 400;
       }
       .col-9 {
-        padding: 50px 20px;
+        padding: 50px 30px;
         .all-input {
           display: flex;
-          flex-direction: column;
-          row-gap: 30px;
+          flex-wrap: wrap;
+          column-gap: 30px;
+          // flex-direction: column;
+          row-gap: 50px;
           justify-content: space-around;
           margin-top: 50px;
           input {
-            width: 550px;
+            width: 400px;
             height: 50px;
             padding: 8px 5;
-            margin: 0 0 0 85px;
+            // margin: 0 0 0 40px;
             border-radius: 2px;
             background: white;
             border: transparent;
-            font-size: 14px;
+            font-size: 16px;
           }
           select {
-            width: 550px;
+            width: 850px;
             height: 50px;
-            padding: 8px 5;
-            margin: 0 0 0 85px;
+            padding: 8px 5px;
+            // margin: 0 0 0 85px;
             border-radius: 2px;
             background: white;
             border: transparent;
-            font-size: 14px;
+            font-size: 16px;
           }
         }
 
@@ -3409,34 +3416,35 @@
     }
 
     .wrap-7 {
-      height: 600px;
+      height: 800px;
       text-align: center;
       background: white;
       h1 {
-        font-size: 24px;
-        padding: 100px 0 0 0;
-        line-height: 30px;
+        font-size: 30px;
+        padding: 120px 0 0 0;
+        line-height: 40px;
       }
       small {
-        font-size: 16px;
-        line-height: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
       }
       .flexbox-9 {
         @include flexing;
-        padding: 80px 20px;
+        padding: 80px 30px;
         align-items: center;
         column-gap: 15px;
         .col-10 {
           max-width: 300px;
           img {
             position: relative;
-            width: 230px;
+            width: 300px;
           }
           .icontext {
             position: absolute;
-            top: 855%;
+            top: 1032%;
             @include flexing;
-            column-gap: 160px;
+            column-gap: 215px;
           }
           // b {
           //   position: absolute;
@@ -3456,15 +3464,15 @@
 
     .wrap-8 {
       background: white;
-      height: 400px;
+      height: 450px;
       overflow: hidden;
       .flexbox-10 {
         @include flexing;
-        padding: 50px 50px 0;
+        padding: 50px 100px 0;
         .col-11 {
-          min-width: 700px;
+          min-width: 850px;
           h4 {
-            font-size: 18px;
+            font-size: 20px;
           }
           img {
             width: 150px;
@@ -3483,54 +3491,54 @@
     }
 
     footer {
-      height: 400px;
+      height: 450px;
       background: $bg-color;
-      padding: 70px 20px;
+      padding: 70px 30px;
       .flexbox-11 {
         @include flexing;
         border-bottom: 1px dashed white;
         .col-12 {
-          min-width: 250px;
+          min-width: 300px;
           margin: 0 0 80px 0;
           h1 {
-            font-size: $text-heading-size;
+            font-size: $text-heading-size + 5px;
             font-weight: $text-weight + 300;
             color: white;
           }
           h4 {
-            font-size: 22px;
+            font-size: 25px;
             font-weight: $text-weight + 200;
             color: white;
-            margin: 0 0 30px 0;
+            margin: 0 0 40px 0;
           }
           p {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: $text-weight - 300px;
             color: white;
-            line-height: 20px;
+            line-height: 25px;
           }
           a {
             text-decoration: none;
             color: white;
             // line-height: 80px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
           }
           .address {
-            margin: 20px 0 0 0;
+            margin: 30px 0 0 0;
           }
           input {
-            width: 220px;
+            width: 300px;
             height: 50px;
             border: transparent;
             background: white;
-            font-size: 14px;
+            font-size: 16px;
             color: black;
             padding: 5px 10px;
           }
           button {
-            width: 200px;
+            width: 250px;
             height: 40px;
-            margin: 20px 10px 0;
+            margin: 20px 20px 0;
             padding: 5px 10px;
             background: #5e6600;
             border: transparent;
@@ -3540,8 +3548,8 @@
             // box-shadow: 0 0 2px;
           }
           small {
-            font-size: 14px;
-            line-height: 15px;
+            font-size: 16px;
+            line-height: 20px;
             color: white;
           }
         }
@@ -3550,18 +3558,18 @@
         @include flexing;
         margin: 10px 0 0 0;
         small {
-          font-size: 14px;
+          font-size: 16px;
           color: white;
           cursor: pointer;
         }
         .platforms {
-          max-width: 500px;
+          max-width: 600px;
           @include flexing;
           flex-direction: row;
           column-gap: 30px;
           .fa-brands {
             color: white;
-            font-size: $text-para-size;
+            font-size: $text-para-size + 5px;
             cursor: pointer;
           }
         }
