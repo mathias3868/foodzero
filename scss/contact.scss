@@ -1,0 +1,16 @@
+@use "./home.scss";
+@import "./variables";
+
+* {
+  @extend*;
+}
+.container {
+  @extend.container;
+  border: 1px dashed black;
+  .wrap-1 {
+    @extend.wrap-1;
+    background-image: url(../images/background-img.png);
+    background-size: cover;
+    height: 600px;
+  }
+}

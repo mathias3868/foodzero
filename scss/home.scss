@@ -63,6 +63,7 @@
           text-align: center;
           z-index: 1;
           position: relative;
+          color: white;
           &::after {
             content: "";
             width: 100px;
@@ -4241,8 +4242,8 @@
             justify-content: center;
             align-items: center;
             column-gap: 50px;
-            padding: 0 70px;
-            font-size: $text-para-size + 5px;
+            padding: 0 50px;
+            font-size: $text-para-size + 10px;
             font-weight: $text-weight;
             a {
               padding: 8px 25px;
@@ -4262,14 +4263,14 @@
           // right: -50px;
 
           h1 {
-            font-size: 12rem;
+            font-size: 15rem;
             color: white;
             position: absolute;
             z-index: 1;
           }
           p {
             color: white;
-            line-height: 25px;
+            line-height: 35px;
             font-size: $text-para-size + 5px;
             margin-top: 85%;
           }
@@ -4279,7 +4280,7 @@
             line-height: 80px;
             // padding: 8px 25px;
             // border: 1px solid;
-            font-size: $text-para-size;
+            font-size: $text-para-size + 20px;
             position: absolute;
             margin: 8% 0 0 0;
             left: -0px;
