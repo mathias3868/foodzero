@@ -79,6 +79,7 @@
         .fa-bars {
           width: 50px;
           padding-top: 15px;
+          color: #ccc;
           cursor: pointer;
           position: $myrelative-p;
         }
@@ -120,14 +121,16 @@
           justify-content: center;
           align-items: center;
           column-gap: 50px;
+          color: white;
           padding: 0 70px;
           font-size: $text-para-size;
           font-weight: $text-weight;
           a {
             padding: 8px 25px;
+            color: white;
             border: 1px solid white;
             text-decoration: none;
-            color: black;
+            // color: black;
           }
         }
       }

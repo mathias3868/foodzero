@@ -1,0 +1,39 @@
+@use "./home.scss";
+@import "./mixin";
+@import "./variables";
+
+* {
+  @extend*;
+}
+.container {
+  @extend.container;
+  border: 1px dashed black;
+  .wrap-1 {
+    @extend.wrap-1;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/background-img.png);
+    background-size: cover;
+    height: 650px;
+    .hero-text {
+      padding: $side-padding + 50 $side-padding;
+      h1 {
+        font-size: 7rem;
+        color: #ccc;
+        font-weight: 600;
+        line-height: 130px;
+        max-width: 600px;
+      }
+      p {
+        color: #ccc;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+  .wrap-2 {
+    height: 600px;
+    background: #ccc;
+    .flexbox-2 {
+    }
+  }
+}

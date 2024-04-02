@@ -48,6 +48,7 @@
 .container .wrap-1 .flexbox-1 .col-1 .fa-bars {
   width: 50px;
   padding-top: 15px;
+  color: #ccc;
   cursor: pointer;
   position: relative;
 }
@@ -102,15 +103,16 @@
   align-items: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
+  color: white;
   padding: 0 70px;
   font-size: 20px;
   font-weight: 500;
 }
 .container .wrap-1 .flexbox-1 .col-2 .reservation-texts a {
   padding: 8px 25px;
+  color: white;
   border: 1px solid white;
   text-decoration: none;
-  color: black;
 }
 .container .wrap-1 .flexbox-2 {
   display: flex;
