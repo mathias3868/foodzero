@@ -20,3 +20,9 @@
   background: #233000;
   color: white;
 }
+
+// ======flex mixin==========
+@mixin flexing() {
+  display: flex;
+  justify-content: space-between;
+}

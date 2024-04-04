@@ -346,14 +346,14 @@
 }
 .container .wrap-6 small {
   font-size: 17px;
-  line-height: 25px;
+  line-height: 40px;
 }
 .container .wrap-6 .col-9 {
   padding: 100px 50px;
 }
 .container .wrap-6 .col-9 .all-input {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 50px;
 }
 .container .wrap-6 .col-9 .all-input input {
@@ -920,6 +920,7 @@
   }
   .container .wrap-6 .col-9 .all-input {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
     justify-content: space-around;
@@ -1503,6 +1504,7 @@
   }
   .container .wrap-6 .col-9 .all-input {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
     justify-content: space-around;
@@ -2092,6 +2094,7 @@
   }
   .container .wrap-6 .col-9 .all-input {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
     justify-content: space-around;
@@ -2658,6 +2661,7 @@
   }
   .container .wrap-6 .col-9 .all-input {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     row-gap: 30px;
     justify-content: space-around;
@@ -3224,6 +3228,7 @@
   }
   .container .wrap-6 .col-9 .all-input {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     -moz-column-gap: 30px;
          column-gap: 30px;
@@ -3791,6 +3796,7 @@
   }
   .container .wrap-6 .col-9 .all-input {
     display: flex;
+    justify-content: space-between;
     -moz-column-gap: 30px;
          column-gap: 30px;
     justify-content: space-around;
@@ -4308,17 +4314,17 @@
     font-size: 18px;
     line-height: 70px;
   }
-  container .wrap-6 {
+  container .wrap-6, container .container .wrap-6, .container container .wrap-6 {
     height: 700px;
     background: rgb(228, 240, 245);
     text-align: center;
   }
-  container .wrap-6 h1 {
+  container .wrap-6 h1, container .container .wrap-6 h1, .container container .wrap-6 h1 {
     font-size: 60px;
     padding: 150px 0 0 0;
     line-height: 40px;
   }
-  container .wrap-6 small {
+  container .wrap-6 small, container .container .wrap-6 small, .container container .wrap-6 small {
     font-size: 17px;
     line-height: 25px;
   }
@@ -4327,6 +4333,7 @@
   }
   container .wrap-6 .col-9 .all-input {
     display: flex;
+    justify-content: space-between;
     justify-content: space-around;
     margin-top: 50px;
   }
@@ -4528,6 +4535,338 @@
   font-size: 18px;
 }
 .container .wrap-2 {
-  height: 600px;
-  background: #ccc;
+  height: 950px;
+}
+.container .wrap-2 .flexbox-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrap-2 .flexbox-2 .col-3 {
+  max-width: 600px;
+  margin: 100px 0 30px 500px;
+}
+.container .wrap-2 .flexbox-2 .col-3 h2 {
+  font-size: 70px;
+  text-align: center;
+  font-weight: 600px;
+  line-height: 80px;
+}
+.container .wrap-2 .flexbox-2 .col-3 p {
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 25px;
+}
+.container .wrap-2 .flexbox-2 .col-4 {
+  max-width: 300px;
+}
+.container .wrap-2 .flexbox-2 .col-4 img {
+  width: 300px;
+}
+.container .wrap-2 .flexbox-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 150px 50px 50px;
+}
+.container .wrap-2 .flexbox-3 .col-5 {
+  max-width: 500px;
+}
+.container .wrap-2 .flexbox-3 .col-5 img {
+  width: 500px;
+}
+.container .wrap-2 .flexbox-3 .col-5 .row {
+  margin-bottom: 50px;
+}
+.container .wrap-2 .flexbox-3 .col-5 .row p {
+  font-size: 20px;
+  border-bottom: 1px dashed #123;
+  text-align: right;
+  font-weight: 400;
+}
+.container .wrap-2 .flexbox-3 .col-5 .row h4 {
+  font-size: 50px;
+  line-height: 50px;
+  padding-bottom: 30px;
+  font-weight: 600px;
+}
+.container .wrap-2 .flexbox-3 .col-5 .row small {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.container .wrap-3 {
+  height: 1000px;
+  background: white;
+}
+.container .wrap-3 h2 {
+  font-size: 70px;
+  padding: 100px 0 20px 0;
+  text-align: center;
+  font-weight: 600px;
+  line-height: 80px;
+}
+.container .wrap-3 .heading-text {
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 25px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.container .wrap-3 .flexbox-4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px 50px 150px;
+}
+.container .wrap-3 .flexbox-4 .col-6 {
+  max-width: 500px;
+}
+.container .wrap-3 .flexbox-4 .col-6 img {
+  width: 500px;
+}
+.container .wrap-3 .flexbox-4 .col-6 .row {
+  margin-bottom: 50px;
+}
+.container .wrap-3 .flexbox-4 .col-6 .row p {
+  font-size: 20px;
+  border-bottom: 1px dashed #123;
+  text-align: right;
+  font-weight: 400;
+}
+.container .wrap-3 .flexbox-4 .col-6 .row h4 {
+  font-size: 50px;
+  line-height: 50px;
+  padding-bottom: 30px;
+  font-weight: 600px;
+}
+.container .wrap-3 .flexbox-4 .col-6 .row small {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.container .wrap-4 {
+  height: 1000px;
+}
+.container .wrap-4 h2 {
+  font-size: 70px;
+  padding: 100px 0 20px 0;
+  text-align: center;
+  font-weight: 600px;
+  line-height: 80px;
+}
+.container .wrap-4 .heading-text {
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 25px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.container .wrap-4 .flexbox-5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 150px 50px 50px;
+}
+.container .wrap-4 .flexbox-5 .col-7 {
+  max-width: 500px;
+}
+.container .wrap-4 .flexbox-5 .col-7 img {
+  width: 500px;
+}
+.container .wrap-4 .flexbox-5 .col-7 .row {
+  margin-bottom: 50px;
+}
+.container .wrap-4 .flexbox-5 .col-7 .row p {
+  font-size: 20px;
+  border-bottom: 1px dashed #123;
+  text-align: right;
+  font-weight: 400;
+}
+.container .wrap-4 .flexbox-5 .col-7 .row h4 {
+  font-size: 50px;
+  line-height: 50px;
+  padding-bottom: 30px;
+  font-weight: 600px;
+}
+.container .wrap-4 .flexbox-5 .col-7 .row small {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+@media (max-width: 250.9) {
+  .container {
+    border: 1px solid blue;
+  }
+  .container .wrap-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/background-img.png);
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+  }
+  .container .wrap-1 .hero-text {
+    padding: 50px 10px h1;
+    padding-font-size: 1.5rem;
+    padding-color: #ccc;
+    padding-font-weight: 600;
+    padding-line-height: 130px;
+    padding-max-width: 600px;
+  }
+  .container .wrap-1 .hero-text p {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .container .wrap-2 {
+    height: 950px;
+  }
+  .container .wrap-2 .flexbox-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .wrap-2 .flexbox-2 .col-3 {
+    max-width: 600px;
+    margin: 100px 0 30px 500px;
+  }
+  .container .wrap-2 .flexbox-2 .col-3 h2 {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600px;
+    line-height: 80px;
+  }
+  .container .wrap-2 .flexbox-2 .col-3 p {
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 25px;
+  }
+  .container .wrap-2 .flexbox-2 .col-4 {
+    max-width: 300px;
+  }
+  .container .wrap-2 .flexbox-2 .col-4 img {
+    width: 300px;
+  }
+  .container .wrap-2 .flexbox-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px 50px 50px;
+  }
+  .container .wrap-2 .flexbox-3 .col-5 {
+    max-width: 500px;
+  }
+  .container .wrap-2 .flexbox-3 .col-5 img {
+    width: 500px;
+  }
+  .container .wrap-2 .flexbox-3 .col-5 .row {
+    margin-bottom: 50px;
+  }
+  .container .wrap-2 .flexbox-3 .col-5 .row p {
+    font-size: 20px;
+    border-bottom: 1px dashed #123;
+    text-align: right;
+    font-weight: 400;
+  }
+  .container .wrap-2 .flexbox-3 .col-5 .row h4 {
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 30px;
+    font-weight: 600px;
+  }
+  .container .wrap-2 .flexbox-3 .col-5 .row small {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .container .wrap-3 {
+    height: 1000px;
+    background: white;
+  }
+  .container .wrap-3 h2 {
+    font-size: 70px;
+    padding: 100px 0 20px 0;
+    text-align: center;
+    font-weight: 600px;
+    line-height: 80px;
+  }
+  .container .wrap-3 .heading-text {
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .container .wrap-3 .flexbox-4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 50px 150px;
+  }
+  .container .wrap-3 .flexbox-4 .col-6 {
+    max-width: 500px;
+  }
+  .container .wrap-3 .flexbox-4 .col-6 img {
+    width: 500px;
+  }
+  .container .wrap-3 .flexbox-4 .col-6 .row {
+    margin-bottom: 50px;
+  }
+  .container .wrap-3 .flexbox-4 .col-6 .row p {
+    font-size: 20px;
+    border-bottom: 1px dashed #123;
+    text-align: right;
+    font-weight: 400;
+  }
+  .container .wrap-3 .flexbox-4 .col-6 .row h4 {
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 30px;
+    font-weight: 600px;
+  }
+  .container .wrap-3 .flexbox-4 .col-6 .row small {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .container .wrap-4 {
+    height: 1000px;
+  }
+  .container .wrap-4 h2 {
+    font-size: 70px;
+    padding: 100px 0 20px 0;
+    text-align: center;
+    font-weight: 600px;
+    line-height: 80px;
+  }
+  .container .wrap-4 .heading-text {
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .container .wrap-4 .flexbox-5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px 50px 50px;
+  }
+  .container .wrap-4 .flexbox-5 .col-7 {
+    max-width: 500px;
+  }
+  .container .wrap-4 .flexbox-5 .col-7 img {
+    width: 500px;
+  }
+  .container .wrap-4 .flexbox-5 .col-7 .row {
+    margin-bottom: 50px;
+  }
+  .container .wrap-4 .flexbox-5 .col-7 .row p {
+    font-size: 20px;
+    border-bottom: 1px dashed #123;
+    text-align: right;
+    font-weight: 400;
+  }
+  .container .wrap-4 .flexbox-5 .col-7 .row h4 {
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 30px;
+    font-weight: 600px;
+  }
+  .container .wrap-4 .flexbox-5 .col-7 .row small {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=menu.css.map */

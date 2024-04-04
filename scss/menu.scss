@@ -1,4 +1,4 @@
-@use "./home.scss";
+@import "./home.scss";
 @import "./mixin";
 @import "./variables";
 
@@ -31,9 +31,384 @@
     }
   }
   .wrap-2 {
-    height: 600px;
-    background: #ccc;
+    height: 950px;
+    // background: #ccc;
     .flexbox-2 {
+      @include flexing();
+      .col-3 {
+        max-width: 600px;
+        margin: 100px 0 30px 500px;
+        h2 {
+          font-size: $text-heading-size + 40px;
+          text-align: center;
+          font-weight: 600px;
+          line-height: 80px;
+        }
+        p {
+          font-size: $text-para-size;
+          font-weight: 400px;
+          line-height: 25px;
+        }
+      }
+      .col-4 {
+        max-width: 300px;
+        img {
+          width: 300px;
+        }
+      }
+    }
+    .flexbox-3 {
+      @include flexing();
+      padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+      .col-5 {
+        max-width: 500px;
+        img {
+          width: 500px;
+        }
+        .row {
+          margin-bottom: 50px;
+          p {
+            font-size: $text-para-size;
+            border-bottom: 1px dashed #123;
+            text-align: right;
+            font-weight: 400;
+          }
+          h4 {
+            font-size: $text-heading-size + 20px;
+            line-height: 50px;
+            padding-bottom: 30px;
+            font-weight: 600px;
+          }
+          small {
+            font-size: $text-para-size;
+            line-height: 25px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // ========main section=========
+
+  .wrap-3 {
+    height: 1000px;
+    background: white;
+    // background: #ccc;
+    h2 {
+      font-size: $text-heading-size + 40px;
+      padding: 100px 0 20px 0;
+      text-align: center;
+      font-weight: 600px;
+      line-height: 80px;
+    }
+    .heading-text {
+      font-size: $text-para-size;
+      font-weight: 400px;
+      line-height: 25px;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .flexbox-4 {
+      @include flexing();
+      padding: $side-padding $side-padding $side-padding $side-padding + 100px;
+      .col-6 {
+        max-width: 500px;
+        img {
+          width: 500px;
+        }
+        .row {
+          margin-bottom: 50px;
+          p {
+            font-size: $text-para-size;
+            border-bottom: 1px dashed #123;
+            text-align: right;
+            font-weight: 400;
+          }
+          h4 {
+            font-size: $text-heading-size + 20px;
+            line-height: 50px;
+            padding-bottom: 30px;
+            font-weight: 600px;
+          }
+          small {
+            font-size: $text-para-size;
+            line-height: 25px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // =======pastiries and drink section=========
+
+  .wrap-4 {
+    height: 1000px;
+    // background: #ccc;
+    h2 {
+      font-size: $text-heading-size + 40px;
+      padding: 100px 0 20px 0;
+      text-align: center;
+      font-weight: 600px;
+      line-height: 80px;
+    }
+    .heading-text {
+      font-size: $text-para-size;
+      font-weight: 400px;
+      line-height: 25px;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    .flexbox-5 {
+      @include flexing();
+      padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+      .col-7 {
+        max-width: 500px;
+        img {
+          width: 500px;
+        }
+        .row {
+          margin-bottom: 50px;
+          p {
+            font-size: $text-para-size;
+            border-bottom: 1px dashed #123;
+            text-align: right;
+            font-weight: 400;
+          }
+          h4 {
+            font-size: $text-heading-size + 20px;
+            line-height: 50px;
+            padding-bottom: 30px;
+            font-weight: 600px;
+          }
+          small {
+            font-size: $text-para-size;
+            line-height: 25px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // ========make reservation section======
+  .wrap-6 {
+    @extend .wrap-6;
+    //  ===== i extrnded this section from home page====
+    button {
+    }
+  }
+
+  .footer {
+    @extend .footer;
+    //  ===== i extrnded this section from home page====
+  }
+}
+
+// =========MEDIA QUERIES===================
+
+@media (max-width: 250.9) {
+  .container {
+    @extend.container;
+    border: 1px solid blue;
+    .wrap-1 {
+      @extend.wrap-1;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/background-img.png);
+      background-size: cover;
+      height: 650px;
+      width: 100%;
+      .hero-text {
+        padding: $side-padding 10px h1 {
+          font-size: 1.5rem;
+          color: #ccc;
+          font-weight: 600;
+          line-height: 130px;
+          max-width: 600px;
+        }
+        p {
+          color: #ccc;
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+    }
+    .wrap-2 {
+      height: 950px;
+      // background: #ccc;
+      .flexbox-2 {
+        @include flexing();
+        .col-3 {
+          max-width: 600px;
+          margin: 100px 0 30px 500px;
+          h2 {
+            font-size: $text-heading-size + 40px;
+            text-align: center;
+            font-weight: 600px;
+            line-height: 80px;
+          }
+          p {
+            font-size: $text-para-size;
+            font-weight: 400px;
+            line-height: 25px;
+          }
+        }
+        .col-4 {
+          max-width: 300px;
+          img {
+            width: 300px;
+          }
+        }
+      }
+      .flexbox-3 {
+        @include flexing();
+        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+        .col-5 {
+          max-width: 500px;
+          img {
+            width: 500px;
+          }
+          .row {
+            margin-bottom: 50px;
+            p {
+              font-size: $text-para-size;
+              border-bottom: 1px dashed #123;
+              text-align: right;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: $text-heading-size + 20px;
+              line-height: 50px;
+              padding-bottom: 30px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: $text-para-size;
+              line-height: 25px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // ========main section=========
+
+    .wrap-3 {
+      height: 1000px;
+      background: white;
+      // background: #ccc;
+      h2 {
+        font-size: $text-heading-size + 40px;
+        padding: 100px 0 20px 0;
+        text-align: center;
+        font-weight: 600px;
+        line-height: 80px;
+      }
+      .heading-text {
+        font-size: $text-para-size;
+        font-weight: 400px;
+        line-height: 25px;
+        text-align: center;
+        padding-bottom: 50px;
+      }
+      .flexbox-4 {
+        @include flexing();
+        padding: $side-padding $side-padding $side-padding $side-padding + 100px;
+        .col-6 {
+          max-width: 500px;
+          img {
+            width: 500px;
+          }
+          .row {
+            margin-bottom: 50px;
+            p {
+              font-size: $text-para-size;
+              border-bottom: 1px dashed #123;
+              text-align: right;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: $text-heading-size + 20px;
+              line-height: 50px;
+              padding-bottom: 30px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: $text-para-size;
+              line-height: 25px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // =======pastiries and drink section=========
+
+    .wrap-4 {
+      height: 1000px;
+      // background: #ccc;
+      h2 {
+        font-size: $text-heading-size + 40px;
+        padding: 100px 0 20px 0;
+        text-align: center;
+        font-weight: 600px;
+        line-height: 80px;
+      }
+      .heading-text {
+        font-size: $text-para-size;
+        font-weight: 400px;
+        line-height: 25px;
+        text-align: center;
+        padding-bottom: 50px;
+      }
+
+      .flexbox-5 {
+        @include flexing();
+        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+        .col-7 {
+          max-width: 500px;
+          img {
+            width: 500px;
+          }
+          .row {
+            margin-bottom: 50px;
+            p {
+              font-size: $text-para-size;
+              border-bottom: 1px dashed #123;
+              text-align: right;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: $text-heading-size + 20px;
+              line-height: 50px;
+              padding-bottom: 30px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: $text-para-size;
+              line-height: 25px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // ========make reservation section======
+    .wrap-6 {
+      @extend .wrap-6;
+      //  ===== i extrnded this section from home page====
+      button {
+      }
+    }
+
+    .footer {
+      @extend .footer;
+      //  ===== i extrnded this section from home page====
     }
   }
 }
