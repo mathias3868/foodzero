@@ -16,7 +16,6 @@
   .wrap-1 {
     background: $bg-color;
     height: 1800px;
-    // padding: $side-padding-20px, $side-padding;
     color: $text-color;
     font-family: $font-family;
 
@@ -339,7 +338,7 @@
     text-align: center;
     h1 {
       font-size: $text-heading-size + 30px;
-      padding: 150px 0 0 0;
+      padding: 150px 0 20px 0;
       line-height: 40px;
     }
     small {
@@ -347,12 +346,12 @@
       line-height: 40px;
     }
     .col-9 {
-      padding: 100px 50px;
+      padding: 80px 50px;
       .all-input {
         @include flexing();
         margin-top: 50px;
         input {
-          width: 200px;
+          width: 400px;
           height: 50px;
           padding: 8px 5;
           border-radius: 2px;
@@ -361,7 +360,7 @@
           font-size: $text-para-size - 3;
         }
         select {
-          width: 200px;
+          width: 400px;
           height: 50px;
           padding: 8px 5;
           border-radius: 2px;
@@ -579,7 +578,7 @@
               width: 40px;
               height: 25px;
               position: absolute;
-              border: 1px solid black;
+              border: 1px solid #ccc;
               left: -0px;
               margin-left: 22px;
               bottom: -5px;

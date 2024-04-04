@@ -1,35 +1,134 @@
-@import "./home.scss";
 @import "./mixin";
 @import "./variables";
 
 * {
-  @extend*;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .container {
-  @extend.container;
-  border: 1px dashed black;
+  margin: 0;
+  border: $border-solid red;
+  width: $container-width;
+  height: $container-height;
+
+  // =============header section==================
+
   .wrap-1 {
-    @extend.wrap-1;
+    font-family: $font-family;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(../images/background-img.png);
+    width: 100%;
     background-size: cover;
-    height: 650px;
+    height: 700px;
+    .flexbox-1 {
+      @include flexing();
+      padding: $side-padding - 20px $side-padding;
+      // flex-wrap: wrap;
+      .col-1 {
+        max-width: 300px;
+        @include flexing();
+        gap: $flex-gap;
+
+        h2 {
+          font-size: $text-heading-size;
+          font-weight: $text-weight + 300;
+          text-align: center;
+          z-index: 1;
+          position: relative;
+          color: white;
+          &::after {
+            content: "";
+            width: 100px;
+            height: 60px;
+            position: absolute;
+            border: 1px solid white;
+            left: -0px;
+            margin-left: 25px;
+            bottom: -15px;
+          }
+        }
+
+        .fa-bars {
+          width: 50px;
+          padding-top: 15px;
+          color: #ccc;
+          cursor: pointer;
+          position: $myrelative-p;
+        }
+        .bars-content {
+          @include navigationbar;
+          .blog-link a {
+            color: yellow;
+          }
+          ul li {
+            list-style-type: none;
+            padding: 12px;
+            a {
+              text-decoration: none;
+              color: white;
+              font-size: $text-para-size;
+              font-weight: $text-weight;
+              &:hover {
+                background: white;
+                color: black;
+              }
+            }
+          }
+          .blog-content {
+            padding-left: $side-padding - 10px;
+            // display: none;
+            ul li {
+              padding: 3px;
+              a {
+                font-size: $text-para-size - 3px;
+              }
+            }
+          }
+        }
+      }
+      .col-2 {
+        max-width: 400px;
+        .reservation-texts {
+          @include flexing();
+          justify-content: center;
+          align-items: center;
+          column-gap: 50px;
+          color: white;
+          padding: 0 70px;
+          font-size: $text-para-size;
+          font-weight: $text-weight;
+          a {
+            padding: 8px 25px;
+            color: white;
+            border: 1px solid white;
+            text-decoration: none;
+            // color: black;
+          }
+        }
+      }
+    }
     .hero-text {
-      padding: $side-padding + 50 $side-padding;
+      padding: $side-padding + 100 $side-padding;
       h1 {
         font-size: 7rem;
         color: #ccc;
         font-weight: 600;
-        line-height: 130px;
+        line-height: 120px;
         max-width: 600px;
+        max-height: 180px;
       }
       p {
         color: #ccc;
         font-weight: 400;
+        line-height: 25px;
         font-size: 18px;
+        padding-top: 60px;
       }
     }
   }
+  // ==========starter section====================
+
   .wrap-2 {
     height: 950px;
     // background: #ccc;
@@ -66,17 +165,18 @@
           width: 500px;
         }
         .row {
-          margin-bottom: 50px;
+          margin-bottom: 80px;
           p {
             font-size: $text-para-size;
             border-bottom: 1px dashed #123;
             text-align: right;
+            line-height: 25px;
             font-weight: 400;
           }
           h4 {
-            font-size: $text-heading-size + 20px;
+            font-size: $text-heading-size + 15px;
             line-height: 50px;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             font-weight: 600px;
           }
           small {
@@ -89,7 +189,7 @@
     }
   }
 
-  // ========main section=========
+  // ========main section=========================
 
   .wrap-3 {
     height: 1000px;
@@ -118,17 +218,18 @@
           width: 500px;
         }
         .row {
-          margin-bottom: 50px;
+          margin-bottom: 60px;
           p {
             font-size: $text-para-size;
             border-bottom: 1px dashed #123;
             text-align: right;
+            line-height: 25px;
             font-weight: 400;
           }
           h4 {
-            font-size: $text-heading-size + 20px;
+            font-size: $text-heading-size + 15px;
             line-height: 50px;
-            padding-bottom: 30px;
+            padding-bottom: 10px;
             font-weight: 600px;
           }
           small {
@@ -141,7 +242,7 @@
     }
   }
 
-  // =======pastiries and drink section=========
+  // =======pastiries and drink section============
 
   .wrap-4 {
     height: 1000px;
@@ -170,17 +271,18 @@
           width: 500px;
         }
         .row {
-          margin-bottom: 50px;
+          margin-bottom: 95px;
           p {
             font-size: $text-para-size;
             border-bottom: 1px dashed #123;
+            line-height: 25px;
             text-align: right;
             font-weight: 400;
           }
           h4 {
             font-size: $text-heading-size + 20px;
             line-height: 50px;
-            padding-bottom: 30px;
+            padding-bottom: 10px;
             font-weight: 600px;
           }
           small {
@@ -193,100 +295,332 @@
     }
   }
 
-  // ========make reservation section======
+  // ========make reservation section==============
+
   .wrap-6 {
-    @extend .wrap-6;
-    //  ===== i extrnded this section from home page====
-    button {
+    height: 700px;
+    background: rgb(228, 240, 245);
+    text-align: center;
+    h1 {
+      font-size: $text-heading-size + 30px;
+      padding: 150px 0 20px 0;
+      line-height: 40px;
+    }
+    small {
+      font-size: $text-para-size - 3px;
+      line-height: 40px;
+    }
+    .col-9 {
+      padding: 80px 50px;
+      .all-input {
+        @include flexing();
+        margin-top: 50px;
+        input {
+          width: 400px;
+          height: 50px;
+          padding: 8px 5;
+          border-radius: 2px;
+          background: white;
+          border: transparent;
+          font-size: $text-para-size - 3;
+        }
+        select {
+          width: 400px;
+          height: 50px;
+          padding: 8px 5;
+          border-radius: 2px;
+          background: white;
+          border: transparent;
+          font-size: $text-para-size - 3;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 60px;
+        background: $bg-color;
+        color: white;
+        font-size: $text-para-size;
+        font-style: italic;
+        margin-top: 100px;
+        cursor: pointer;
+      }
     }
   }
 
-  .footer {
-    @extend .footer;
-    //  ===== i extrnded this section from home page====
+  // ===========footer section========================
+
+  footer {
+    height: 500px;
+    background: $bg-color;
+    padding: 100px 50px;
+    .flexbox-11 {
+      @include flexing();
+      border-bottom: 2px dashed white;
+      .col-12 {
+        min-width: 300px;
+        margin: 0 0 100px 0;
+        h1 {
+          font-size: $text-heading-size + 15px;
+          font-weight: $text-weight + 300;
+          color: white;
+        }
+        h4 {
+          font-size: $text-heading-size;
+          font-weight: $text-weight + 200;
+          color: white;
+          margin: 0 0 50px 0;
+        }
+        p {
+          font-size: $text-para-size;
+          font-weight: $text-weight - 300px;
+          color: white;
+          line-height: 25px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          // line-height: 80px;
+          margin-bottom: 50px;
+        }
+        .address {
+          margin: 30px 0 0 0;
+        }
+        input {
+          width: 300px;
+          height: 50px;
+          border: transparent;
+          background: white;
+          color: black;
+          padding: 5px 10px;
+        }
+        button {
+          width: 150px;
+          height: 50px;
+          padding: 5px 10px;
+          background: #5e6600;
+          border: transparent;
+          cursor: pointer;
+          font-size: $text-para-size;
+          // box-shadow: 0 0 2px;
+        }
+        small {
+          font-size: $text-para-size - 5px;
+          line-height: 25px;
+          color: white;
+        }
+      }
+    }
+    .visit {
+      @include flexing();
+      margin: 10px 0 0 0;
+      small {
+        font-size: $text-para-size - 5px;
+        color: white;
+        cursor: pointer;
+      }
+      .platforms {
+        max-width: 500px;
+        @include flexing();
+        flex-direction: row;
+        column-gap: 30px;
+        .fa-brands {
+          color: white;
+          font-size: $text-para-size;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
-// =========MEDIA QUERIES===================
-
-@media (max-width: 250.9) {
+// ===========MEDIA QUERIES=========================
+// XX-SM(<251px)
+@media (max-width: 250.9px) {
   .container {
-    @extend.container;
-    border: 1px solid blue;
+    margin: 0;
+    border: $border-solid blue;
+    width: $container-width;
+    height: $container-height;
+
+    // =============header section==================
+
     .wrap-1 {
-      @extend.wrap-1;
+      font-family: $font-family;
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../images/background-img.png);
+      // width: 100%;
       background-size: cover;
-      height: 650px;
-      width: 100%;
+      height: 350px;
+      .flexbox-1 {
+        @include flexing();
+        padding: 20px 10px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .col-1 {
+          max-width: 100%;
+          @include flexing();
+          align-items: center;
+          gap: $flex-gap;
+
+          h2 {
+            font-size: 14px;
+            font-weight: $text-weight + 300;
+            text-align: center;
+            z-index: 1;
+            color: white;
+            position: relative;
+            &::after {
+              content: "";
+              width: 40px;
+              height: 25px;
+              position: absolute;
+              border: 1px solid #ccc;
+              left: -0px;
+              margin-left: 22px;
+              bottom: -5px;
+            }
+          }
+
+          .fa-bars {
+            width: 15px;
+            padding-top: 5px;
+            cursor: pointer;
+            // position: $myrelative-p;
+          }
+          .bars-content {
+            @include navigationbar;
+            .blog-link a {
+              color: yellow;
+            }
+            ul li {
+              list-style-type: none;
+              padding: 12px;
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: $text-para-size;
+                font-weight: $text-weight;
+                &:hover {
+                  background: white;
+                  color: black;
+                }
+              }
+            }
+            .blog-content {
+              padding-left: $side-padding - 10px;
+              // display: none;
+              ul li {
+                padding: 3px;
+                a {
+                  font-size: $text-para-size - 3px;
+                }
+              }
+            }
+          }
+        }
+        .col-2 {
+          max-width: 400px;
+          .reservation-texts {
+            @include flexing();
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 5px;
+            column-gap: 45px;
+            // padding: 0 70px;
+            font-size: 12px;
+            font-weight: 300;
+            a {
+              padding: 4px 12px;
+              border: 1px solid white;
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
       .hero-text {
-        padding: $side-padding 10px h1 {
-          font-size: 1.5rem;
+        padding: 30px 10px;
+        h1 {
+          font-size: 2.5rem;
           color: #ccc;
           font-weight: 600;
-          line-height: 130px;
+          line-height: 50px;
           max-width: 600px;
+          max-height: 180px;
         }
         p {
           color: #ccc;
           font-weight: 400;
-          font-size: 18px;
+          line-height: 15px;
+          font-size: 12px;
+          padding-top: 20px;
         }
       }
     }
+    // ==========starter section====================
+
     .wrap-2 {
-      height: 950px;
+      height: 850px;
       // background: #ccc;
       .flexbox-2 {
         @include flexing();
+        flex-wrap: wrap;
         .col-3 {
           max-width: 600px;
-          margin: 100px 0 30px 500px;
+          margin: 50px 0 0px 10px;
           h2 {
-            font-size: $text-heading-size + 40px;
+            font-size: 20px;
             text-align: center;
             font-weight: 600px;
-            line-height: 80px;
+            line-height: 50px;
           }
           p {
-            font-size: $text-para-size;
+            font-size: 14px;
             font-weight: 400px;
-            line-height: 25px;
+            line-height: 20px;
+            position: absolute;
+            z-index: 1000;
           }
         }
         .col-4 {
           max-width: 300px;
           img {
-            width: 300px;
+            width: 100%;
+            position: absolute;
+            right: 0;
           }
         }
       }
       .flexbox-3 {
         @include flexing();
-        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+        flex-wrap: wrap;
+        padding: $side-padding + 100px 10px $side-padding 10px;
         .col-5 {
           max-width: 500px;
           img {
-            width: 500px;
+            width: 100%;
+            margin-bottom: 40px;
           }
           .row {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             p {
-              font-size: $text-para-size;
+              font-size: 14px;
               border-bottom: 1px dashed #123;
               text-align: right;
+              line-height: 15px;
               font-weight: 400;
             }
             h4 {
-              font-size: $text-heading-size + 20px;
-              line-height: 50px;
-              padding-bottom: 30px;
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
               font-weight: 600px;
             }
             small {
-              font-size: $text-para-size;
-              line-height: 25px;
+              font-size: 14px;
+              line-height: 20px;
               font-weight: 400;
             }
           }
@@ -294,51 +628,53 @@
       }
     }
 
-    // ========main section=========
+    // ========main section=========================
 
     .wrap-3 {
-      height: 1000px;
+      height: 950px;
       background: white;
       // background: #ccc;
       h2 {
-        font-size: $text-heading-size + 40px;
-        padding: 100px 0 20px 0;
+        font-size: 20px;
+        padding: 150px 0 20px 0;
         text-align: center;
         font-weight: 600px;
-        line-height: 80px;
+        line-height: 30px;
       }
       .heading-text {
-        font-size: $text-para-size;
+        font-size: 14px;
         font-weight: 400px;
-        line-height: 25px;
+        line-height: 20px;
         text-align: center;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
       }
       .flexbox-4 {
         @include flexing();
-        padding: $side-padding $side-padding $side-padding $side-padding + 100px;
+        flex-wrap: wrap;
+        padding: $side-padding 10px 30px 10px;
         .col-6 {
           max-width: 500px;
           img {
-            width: 500px;
+            width: 100%;
           }
           .row {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             p {
-              font-size: $text-para-size;
+              font-size: 14px;
               border-bottom: 1px dashed #123;
               text-align: right;
+              line-height: 20px;
               font-weight: 400;
             }
             h4 {
-              font-size: $text-heading-size + 20px;
-              line-height: 50px;
-              padding-bottom: 30px;
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
               font-weight: 600px;
             }
             small {
-              font-size: $text-para-size;
-              line-height: 25px;
+              font-size: 14px;
+              line-height: 20px;
               font-weight: 400;
             }
           }
@@ -346,51 +682,53 @@
       }
     }
 
-    // =======pastiries and drink section=========
+    // =======pastiries and drink section============
 
     .wrap-4 {
-      height: 1000px;
+      height: 1050px;
       // background: #ccc;
       h2 {
-        font-size: $text-heading-size + 40px;
-        padding: 100px 0 20px 0;
+        font-size: 20px;
+        padding: 150px 0 20px 0;
         text-align: center;
         font-weight: 600px;
-        line-height: 80px;
+        line-height: 30px;
       }
       .heading-text {
-        font-size: $text-para-size;
+        font-size: 14px;
         font-weight: 400px;
-        line-height: 25px;
+        line-height: 20px;
         text-align: center;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
       }
 
       .flexbox-5 {
         @include flexing();
-        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+        flex-wrap: wrap;
+        padding: $side-padding 10px $side-padding 10px;
         .col-7 {
           max-width: 500px;
           img {
-            width: 500px;
+            width: 100%;
           }
           .row {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             p {
-              font-size: $text-para-size;
+              font-size: 14px;
               border-bottom: 1px dashed #123;
+              line-height: 20px;
               text-align: right;
               font-weight: 400;
             }
             h4 {
-              font-size: $text-heading-size + 20px;
-              line-height: 50px;
-              padding-bottom: 30px;
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
               font-weight: 600px;
             }
             small {
-              font-size: $text-para-size;
-              line-height: 25px;
+              font-size: 14px;
+              line-height: 20px;
               font-weight: 400;
             }
           }
@@ -398,17 +736,1073 @@
       }
     }
 
-    // ========make reservation section======
+    // ========make reservation section==============
+
     .wrap-6 {
-      @extend .wrap-6;
-      //  ===== i extrnded this section from home page====
-      button {
+      height: 500px;
+      background: rgb(228, 240, 245);
+      text-align: center;
+      h1 {
+        font-size: 20px;
+        font-weight: 600px;
+        padding: 50px 0 0 0;
+        text-align: center;
+        line-height: 25px;
+      }
+      small {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+      .col-9 {
+        padding: 20px 10px;
+        .all-input {
+          @include flexing();
+          flex-wrap: wrap;
+          row-gap: 20px;
+          justify-content: space-around;
+          margin-top: 30px;
+          input {
+            width: 100%;
+            height: 40px;
+            padding: 4px 2px;
+            border-radius: 4px;
+            background: white;
+            border: transparent;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          select {
+            width: 100%;
+            height: 40px;
+            padding: 4px 2px;
+            border-radius: 4px;
+            background: white;
+            border: transparent;
+            font-size: 14px;
+          }
+        }
+
+        button {
+          width: 100%;
+          height: 50px;
+          background: $bg-color;
+          color: white;
+          font-size: 15px;
+          font-style: italic;
+          margin-top: 50px;
+          cursor: pointer;
+        }
       }
     }
 
-    .footer {
-      @extend .footer;
-      //  ===== i extrnded this section from home page====
+    // ===========footer section========================
+
+    footer {
+      height: 500px;
+      background: $bg-color;
+      padding: 30px 10px;
+      text-align: center;
+      .flexbox-11 {
+        @include flexing();
+        flex-wrap: wrap;
+        row-gap: 20px;
+        border-bottom: 1px dashed white;
+        .col-12 {
+          min-width: 100%;
+          margin: 0 0 10px 0;
+          h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            margin: 0 0 10px 0;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400px;
+            color: white;
+            line-height: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+            // line-height: 80px;
+            margin-bottom: 20px;
+          }
+          .address {
+            margin: 15px 0 0 0;
+          }
+          input {
+            width: 100%;
+            height: 40px;
+            border: transparent;
+            background: white;
+            color: black;
+            padding: 2px 4px;
+            border-radius: 4px;
+          }
+          button {
+            width: 100%;
+            height: 40px;
+            padding: 2px 4px;
+            background: #5e6600;
+            border: transparent;
+            margin: 10px 0;
+            cursor: pointer;
+            font-size: 14px;
+            // box-shadow: 0 0 2px;
+          }
+          small {
+            font-size: 12px;
+            line-height: 15px;
+            color: white;
+          }
+        }
+      }
+      .visit {
+        @include flexing();
+        margin: 10px 0 0 0;
+        small {
+          font-size: 12px;
+          color: white;
+          cursor: pointer;
+        }
+        .platforms {
+          max-width: 500px;
+          @include flexing();
+          flex-direction: row;
+          column-gap: 10px;
+          .fa-brands {
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
+
+// XX-SM
+@media (min-width: 251px) and (max-width: 350.9px) {
+  .container {
+    margin: 0;
+    border: $border-solid blue;
+    width: $container-width;
+    height: $container-height;
+
+    // =============header section==================
+
+    .wrap-1 {
+      font-family: $font-family;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/background-img.png);
+      // width: 100%;
+      background-size: cover;
+      height: 350px;
+      .flexbox-1 {
+        @include flexing();
+        padding: 20px 10px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .col-1 {
+          max-width: 100%;
+          @include flexing();
+          align-items: center;
+          gap: $flex-gap;
+
+          h2 {
+            font-size: 14px;
+            font-weight: $text-weight + 300;
+            text-align: center;
+            z-index: 1;
+            color: white;
+            position: relative;
+            &::after {
+              content: "";
+              width: 40px;
+              height: 25px;
+              position: absolute;
+              border: 1px solid #ccc;
+              left: -0px;
+              margin-left: 22px;
+              bottom: -5px;
+            }
+          }
+
+          .fa-bars {
+            width: 15px;
+            padding-top: 5px;
+            cursor: pointer;
+            // position: $myrelative-p;
+          }
+          .bars-content {
+            @include navigationbar;
+            .blog-link a {
+              color: yellow;
+            }
+            ul li {
+              list-style-type: none;
+              padding: 12px;
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: $text-para-size;
+                font-weight: $text-weight;
+                &:hover {
+                  background: white;
+                  color: black;
+                }
+              }
+            }
+            .blog-content {
+              padding-left: $side-padding - 10px;
+              // display: none;
+              ul li {
+                padding: 3px;
+                a {
+                  font-size: $text-para-size - 3px;
+                }
+              }
+            }
+          }
+        }
+        .col-2 {
+          max-width: 400px;
+          .reservation-texts {
+            @include flexing();
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 5px;
+            column-gap: 140px;
+            // padding: 0 70px;
+            font-size: 12px;
+            font-weight: 300;
+            a {
+              padding: 4px 12px;
+              border: 1px solid white;
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
+      .hero-text {
+        padding: 30px 10px;
+        h1 {
+          font-size: 2.5rem;
+          color: #ccc;
+          font-weight: 600;
+          line-height: 50px;
+          max-width: 600px;
+          max-height: 180px;
+        }
+        p {
+          color: #ccc;
+          font-weight: 400;
+          line-height: 15px;
+          font-size: 12px;
+          padding-top: 20px;
+        }
+      }
+    }
+    // ==========starter section====================
+
+    .wrap-2 {
+      height: 850px;
+      // background: #ccc;
+      .flexbox-2 {
+        @include flexing();
+        flex-wrap: wrap;
+        .col-3 {
+          max-width: 600px;
+          margin: 50px 0 0px 10px;
+          h2 {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600px;
+            line-height: 50px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400px;
+            line-height: 20px;
+            position: absolute;
+            z-index: 1000;
+          }
+        }
+        .col-4 {
+          max-width: 300px;
+          img {
+            width: 100%;
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+      .flexbox-3 {
+        @include flexing();
+        flex-wrap: wrap;
+        padding: $side-padding + 150px 10px $side-padding 10px;
+        .col-5 {
+          max-width: 500px;
+          img {
+            width: 100%;
+            margin-bottom: 40px;
+          }
+          .row {
+            margin-bottom: 30px;
+            p {
+              font-size: 14px;
+              border-bottom: 1px dashed #123;
+              text-align: right;
+              line-height: 15px;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // ========main section=========================
+
+    .wrap-3 {
+      height: 950px;
+      background: white;
+      // background: #ccc;
+      h2 {
+        font-size: 20px;
+        padding: 250px 0 20px 0;
+        text-align: center;
+        font-weight: 600px;
+        line-height: 30px;
+      }
+      .heading-text {
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .flexbox-4 {
+        @include flexing();
+        flex-wrap: wrap;
+        padding: $side-padding 10px 30px 10px;
+        .col-6 {
+          max-width: 500px;
+          img {
+            width: 100%;
+          }
+          .row {
+            margin-bottom: 30px;
+            p {
+              font-size: 14px;
+              border-bottom: 1px dashed #123;
+              text-align: right;
+              line-height: 20px;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // =======pastiries and drink section============
+
+    .wrap-4 {
+      height: 1200px;
+      // background: #ccc;
+      h2 {
+        font-size: 20px;
+        padding: 250px 0 20px 0;
+        text-align: center;
+        font-weight: 600px;
+        line-height: 30px;
+      }
+      .heading-text {
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      .flexbox-5 {
+        @include flexing();
+        flex-wrap: wrap;
+        padding: $side-padding 10px $side-padding 10px;
+        .col-7 {
+          max-width: 500px;
+          img {
+            width: 100%;
+          }
+          .row {
+            margin-bottom: 30px;
+            p {
+              font-size: 14px;
+              border-bottom: 1px dashed #123;
+              line-height: 20px;
+              text-align: right;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // ========make reservation section==============
+
+    .wrap-6 {
+      height: 500px;
+      background: rgb(228, 240, 245);
+      text-align: center;
+      h1 {
+        font-size: 20px;
+        font-weight: 600px;
+        padding: 50px 0 0 0;
+        text-align: center;
+        line-height: 25px;
+      }
+      small {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+      .col-9 {
+        padding: 20px 10px;
+        .all-input {
+          @include flexing();
+          flex-wrap: wrap;
+          row-gap: 20px;
+          justify-content: space-around;
+          margin-top: 30px;
+          input {
+            width: 100%;
+            height: 40px;
+            padding: 4px 2px;
+            border-radius: 4px;
+            background: white;
+            border: transparent;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          select {
+            width: 100%;
+            height: 40px;
+            padding: 4px 2px;
+            border-radius: 4px;
+            background: white;
+            border: transparent;
+            font-size: 14px;
+          }
+        }
+
+        button {
+          width: 100%;
+          height: 50px;
+          background: $bg-color;
+          color: white;
+          font-size: 15px;
+          font-style: italic;
+          margin-top: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    // ===========footer section========================
+
+    footer {
+      height: 500px;
+      background: $bg-color;
+      padding: 30px 10px;
+      text-align: center;
+      .flexbox-11 {
+        @include flexing();
+        flex-wrap: wrap;
+        row-gap: 20px;
+        border-bottom: 1px dashed white;
+        .col-12 {
+          min-width: 100%;
+          margin: 0 0 10px 0;
+          h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            margin: 0 0 10px 0;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400px;
+            color: white;
+            line-height: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+            // line-height: 80px;
+            margin-bottom: 20px;
+          }
+          .address {
+            margin: 15px 0 0 0;
+          }
+          input {
+            width: 100%;
+            height: 40px;
+            border: transparent;
+            background: white;
+            color: black;
+            padding: 2px 4px;
+            border-radius: 4px;
+          }
+          button {
+            width: 100%;
+            height: 40px;
+            padding: 2px 4px;
+            background: #5e6600;
+            border: transparent;
+            margin: 10px 0;
+            cursor: pointer;
+            font-size: 14px;
+            // box-shadow: 0 0 2px;
+          }
+          small {
+            font-size: 12px;
+            line-height: 15px;
+            color: white;
+          }
+        }
+      }
+      .visit {
+        @include flexing();
+        margin: 10px 0 0 0;
+        small {
+          font-size: 12px;
+          color: white;
+          cursor: pointer;
+        }
+        .platforms {
+          max-width: 500px;
+          @include flexing();
+          flex-direction: row;
+          column-gap: 10px;
+          .fa-brands {
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-SM
+@media (min-width: 351px) and (max-width: 575.9px) {
+  .container {
+    margin: 0;
+    border: $border-solid blue;
+    width: $container-width;
+    height: $container-height;
+
+    // =============header section==================
+
+    .wrap-1 {
+      font-family: $font-family;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/background-img.png);
+      // width: 100%;
+      background-size: cover;
+      height: 450px;
+      .flexbox-1 {
+        @include flexing();
+        padding: 20px 20px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .col-1 {
+          max-width: 100%;
+          @include flexing();
+          align-items: center;
+          gap: $flex-gap;
+
+          h2 {
+            font-size: 18px;
+            font-weight: $text-weight + 300;
+            text-align: center;
+            z-index: 1;
+            color: white;
+            position: relative;
+            &::after {
+              content: "";
+              width: 55px;
+              height: 30px;
+              position: absolute;
+              border: 1px solid black;
+              left: -0px;
+              margin-left: 19px;
+              bottom: -5px;
+            }
+          }
+
+          .fa-bars {
+            width: 18px;
+            padding-top: 5px;
+            cursor: pointer;
+            // position: $myrelative-p;
+          }
+          .bars-content {
+            @include navigationbar();
+            .blog-link a {
+              color: yellow;
+            }
+            ul li {
+              list-style-type: none;
+              padding: 12px;
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: $text-para-size;
+                font-weight: $text-weight;
+                &:hover {
+                  background: white;
+                  color: black;
+                }
+              }
+            }
+            .blog-content {
+              padding-left: $side-padding - 10px;
+              // display: none;
+              ul li {
+                padding: 3px;
+                a {
+                  font-size: $text-para-size - 3px;
+                }
+              }
+            }
+          }
+        }
+        .col-2 {
+          max-width: 550px;
+          .reservation-texts {
+            @include flexing();
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 5px;
+            column-gap: 45px;
+            // padding: 0 70px;
+            font-size: 14px;
+            font-weight: 300;
+            a {
+              padding: 4px 12px;
+              border: 1px solid white;
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
+      .hero-text {
+        padding: 80px 20px;
+        h1 {
+          font-size: 4.5rem;
+          color: #ccc;
+          font-weight: 600;
+          line-height: 70px;
+          max-width: 600px;
+          max-height: 180px;
+        }
+        p {
+          color: #ccc;
+          font-weight: 400;
+          line-height: 25px;
+          font-size: 16px;
+          padding-top: 20px;
+        }
+      }
+    }
+    // ==========starter section====================
+
+    .wrap-2 {
+      height: 850px;
+      // background: #ccc;
+      .flexbox-2 {
+        @include flexing();
+        flex-wrap: wrap;
+        .col-3 {
+          max-width: 100%;
+          margin: 80px 0 0px 20px;
+          // ============start here=============
+          h2 {
+            font-size: 25px;
+            text-align: center;
+            font-weight: 600px;
+            line-height: 50px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400px;
+            line-height: 20px;
+            position: absolute;
+            z-index: 1000;
+          }
+        }
+        .col-4 {
+          max-width: 300px;
+          img {
+            width: 100%;
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+      .flexbox-3 {
+        @include flexing();
+        flex-wrap: wrap;
+        padding: $side-padding + 150px 10px $side-padding 10px;
+        .col-5 {
+          max-width: 500px;
+          img {
+            width: 100%;
+            margin-bottom: 40px;
+          }
+          .row {
+            margin-bottom: 30px;
+            p {
+              font-size: 14px;
+              border-bottom: 1px dashed #123;
+              text-align: right;
+              line-height: 15px;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // ========main section=========================
+
+    .wrap-3 {
+      height: 950px;
+      background: white;
+      // background: #ccc;
+      h2 {
+        font-size: 20px;
+        padding: 250px 0 20px 0;
+        text-align: center;
+        font-weight: 600px;
+        line-height: 30px;
+      }
+      .heading-text {
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .flexbox-4 {
+        @include flexing();
+        flex-wrap: wrap;
+        padding: $side-padding 10px 30px 10px;
+        .col-6 {
+          max-width: 500px;
+          img {
+            width: 100%;
+          }
+          .row {
+            margin-bottom: 30px;
+            p {
+              font-size: 14px;
+              border-bottom: 1px dashed #123;
+              text-align: right;
+              line-height: 20px;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // =======pastiries and drink section============
+
+    .wrap-4 {
+      height: 1200px;
+      // background: #ccc;
+      h2 {
+        font-size: 20px;
+        padding: 250px 0 20px 0;
+        text-align: center;
+        font-weight: 600px;
+        line-height: 30px;
+      }
+      .heading-text {
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      .flexbox-5 {
+        @include flexing();
+        flex-wrap: wrap;
+        padding: $side-padding 10px $side-padding 10px;
+        .col-7 {
+          max-width: 500px;
+          img {
+            width: 100%;
+          }
+          .row {
+            margin-bottom: 30px;
+            p {
+              font-size: 14px;
+              border-bottom: 1px dashed #123;
+              line-height: 20px;
+              text-align: right;
+              font-weight: 400;
+            }
+            h4 {
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 10px;
+              font-weight: 600px;
+            }
+            small {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // ========make reservation section==============
+
+    .wrap-6 {
+      height: 500px;
+      background: rgb(228, 240, 245);
+      text-align: center;
+      h1 {
+        font-size: 20px;
+        font-weight: 600px;
+        padding: 50px 0 0 0;
+        text-align: center;
+        line-height: 25px;
+      }
+      small {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+      .col-9 {
+        padding: 20px 10px;
+        .all-input {
+          @include flexing();
+          flex-wrap: wrap;
+          row-gap: 20px;
+          justify-content: space-around;
+          margin-top: 30px;
+          input {
+            width: 100%;
+            height: 40px;
+            padding: 4px 2px;
+            border-radius: 4px;
+            background: white;
+            border: transparent;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          select {
+            width: 100%;
+            height: 40px;
+            padding: 4px 2px;
+            border-radius: 4px;
+            background: white;
+            border: transparent;
+            font-size: 14px;
+          }
+        }
+
+        button {
+          width: 100%;
+          height: 50px;
+          background: $bg-color;
+          color: white;
+          font-size: 15px;
+          font-style: italic;
+          margin-top: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    // ===========footer section========================
+
+    footer {
+      height: 500px;
+      background: $bg-color;
+      padding: 30px 10px;
+      text-align: center;
+      .flexbox-11 {
+        @include flexing();
+        flex-wrap: wrap;
+        row-gap: 20px;
+        border-bottom: 1px dashed white;
+        .col-12 {
+          min-width: 100%;
+          margin: 0 0 10px 0;
+          h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            margin: 0 0 10px 0;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400px;
+            color: white;
+            line-height: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+            // line-height: 80px;
+            margin-bottom: 20px;
+          }
+          .address {
+            margin: 15px 0 0 0;
+          }
+          input {
+            width: 100%;
+            height: 40px;
+            border: transparent;
+            background: white;
+            color: black;
+            padding: 2px 4px;
+            border-radius: 4px;
+          }
+          button {
+            width: 100%;
+            height: 40px;
+            padding: 2px 4px;
+            background: #5e6600;
+            border: transparent;
+            margin: 10px 0;
+            cursor: pointer;
+            font-size: 14px;
+            // box-shadow: 0 0 2px;
+          }
+          small {
+            font-size: 12px;
+            line-height: 15px;
+            color: white;
+          }
+        }
+      }
+      .visit {
+        @include flexing();
+        margin: 10px 0 0 0;
+        small {
+          font-size: 12px;
+          color: white;
+          cursor: pointer;
+        }
+        .platforms {
+          max-width: 500px;
+          @include flexing();
+          flex-direction: row;
+          column-gap: 10px;
+          .fa-brands {
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-SM
+// @media (min-width:576px) and (max-width:767.9px){}
+
+// X-SM
+// @media (min-width:768px) and (max-width:991.9px){}
+
+// X-SM
+// @media (min-width:992px) and (max-width:1200.9px){}
+
+// X-SM
+// @media (min-width:1201px) and (max-width:1499.9px){}

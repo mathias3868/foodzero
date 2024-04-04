@@ -341,7 +341,7 @@
 }
 .container .wrap-6 h1 {
   font-size: 60px;
-  padding: 150px 0 0 0;
+  padding: 150px 0 20px 0;
   line-height: 40px;
 }
 .container .wrap-6 small {
@@ -349,7 +349,7 @@
   line-height: 40px;
 }
 .container .wrap-6 .col-9 {
-  padding: 100px 50px;
+  padding: 80px 50px;
 }
 .container .wrap-6 .col-9 .all-input {
   display: flex;
@@ -357,7 +357,7 @@
   margin-top: 50px;
 }
 .container .wrap-6 .col-9 .all-input input {
-  width: 200px;
+  width: 400px;
   height: 50px;
   padding: 8px 5;
   border-radius: 2px;
@@ -366,7 +366,7 @@
   font-size: 17px;
 }
 .container .wrap-6 .col-9 .all-input select {
-  width: 200px;
+  width: 400px;
   height: 50px;
   padding: 8px 5;
   border-radius: 2px;
@@ -569,7 +569,7 @@
     width: 40px;
     height: 25px;
     position: absolute;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     left: 0px;
     margin-left: 22px;
     bottom: -5px;
