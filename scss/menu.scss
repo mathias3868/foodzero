@@ -3102,864 +3102,864 @@
 }
 
 // X-SM
-@media (min-width: 1201px) and (max-width: 1499.9px) {
-  .container {
-    margin: 0;
-    border: $border-solid red;
-    width: $container-width;
-    height: $container-height;
+// @media (min-width: 1201px) and (max-width: 1499.9px) {
+//   .container {
+//     margin: 0;
+//     border: $border-solid red;
+//     width: $container-width;
+//     height: $container-height;
 
-    // =============header section==================
+//     // =============header section==================
 
-    .wrap-1 {
-      font-family: $font-family;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../images/background-img.png);
-      width: 100%;
-      background-size: cover;
-      height: 700px;
-      .flexbox-1 {
-        @include flexing();
-        padding: $side-padding - 20px $side-padding;
-        // flex-wrap: wrap;
-        .col-1 {
-          max-width: 300px;
-          @include flexing();
-          gap: $flex-gap;
+//     .wrap-1 {
+//       font-family: $font-family;
+//       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+//         url(../images/background-img.png);
+//       width: 100%;
+//       background-size: cover;
+//       height: 700px;
+//       .flexbox-1 {
+//         @include flexing();
+//         padding: $side-padding - 20px $side-padding;
+//         // flex-wrap: wrap;
+//         .col-1 {
+//           max-width: 300px;
+//           @include flexing();
+//           gap: $flex-gap;
 
-          h2 {
-            font-size: $text-heading-size;
-            font-weight: $text-weight + 300;
-            text-align: center;
-            z-index: 1;
-            position: relative;
-            color: white;
-            &::after {
-              content: "";
-              width: 100px;
-              height: 60px;
-              position: absolute;
-              border: 1px solid white;
-              left: -0px;
-              margin-left: 25px;
-              bottom: -15px;
-            }
-          }
+//           h2 {
+//             font-size: $text-heading-size;
+//             font-weight: $text-weight + 300;
+//             text-align: center;
+//             z-index: 1;
+//             position: relative;
+//             color: white;
+//             &::after {
+//               content: "";
+//               width: 100px;
+//               height: 60px;
+//               position: absolute;
+//               border: 1px solid white;
+//               left: -0px;
+//               margin-left: 25px;
+//               bottom: -15px;
+//             }
+//           }
 
-          .fa-bars {
-            width: 50px;
-            padding-top: 15px;
-            color: #ccc;
-            cursor: pointer;
-            position: $myrelative-p;
-          }
-          .bars-content {
-            @include navigationbar;
-            .blog-link a {
-              color: yellow;
-            }
-            ul li {
-              list-style-type: none;
-              padding: 12px;
-              a {
-                text-decoration: none;
-                color: white;
-                font-size: $text-para-size;
-                font-weight: $text-weight;
-                &:hover {
-                  background: white;
-                  color: black;
-                }
-              }
-            }
-            .blog-content {
-              padding-left: $side-padding - 10px;
-              // display: none;
-              ul li {
-                padding: 3px;
-                a {
-                  font-size: $text-para-size - 3px;
-                }
-              }
-            }
-          }
-        }
-        .col-2 {
-          max-width: 400px;
-          .reservation-texts {
-            @include flexing();
-            justify-content: center;
-            align-items: center;
-            column-gap: 50px;
-            color: white;
-            padding: 0 70px;
-            font-size: $text-para-size;
-            font-weight: $text-weight;
-            a {
-              padding: 8px 25px;
-              color: white;
-              border: 1px solid white;
-              text-decoration: none;
-              // color: black;
-            }
-          }
-        }
-      }
-      .hero-text {
-        padding: $side-padding + 100 $side-padding;
-        h1 {
-          font-size: 7rem;
-          color: #ccc;
-          font-weight: 600;
-          line-height: 120px;
-          max-width: 600px;
-          max-height: 180px;
-        }
-        p {
-          color: #ccc;
-          font-weight: 400;
-          line-height: 25px;
-          font-size: 18px;
-          padding-top: 60px;
-        }
-      }
-    }
-    // ==========starter section====================
+//           .fa-bars {
+//             width: 50px;
+//             padding-top: 15px;
+//             color: #ccc;
+//             cursor: pointer;
+//             position: $myrelative-p;
+//           }
+//           .bars-content {
+//             @include navigationbar;
+//             .blog-link a {
+//               color: yellow;
+//             }
+//             ul li {
+//               list-style-type: none;
+//               padding: 12px;
+//               a {
+//                 text-decoration: none;
+//                 color: white;
+//                 font-size: $text-para-size;
+//                 font-weight: $text-weight;
+//                 &:hover {
+//                   background: white;
+//                   color: black;
+//                 }
+//               }
+//             }
+//             .blog-content {
+//               padding-left: $side-padding - 10px;
+//               // display: none;
+//               ul li {
+//                 padding: 3px;
+//                 a {
+//                   font-size: $text-para-size - 3px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//         .col-2 {
+//           max-width: 400px;
+//           .reservation-texts {
+//             @include flexing();
+//             justify-content: center;
+//             align-items: center;
+//             column-gap: 50px;
+//             color: white;
+//             padding: 0 70px;
+//             font-size: $text-para-size;
+//             font-weight: $text-weight;
+//             a {
+//               padding: 8px 25px;
+//               color: white;
+//               border: 1px solid white;
+//               text-decoration: none;
+//               // color: black;
+//             }
+//           }
+//         }
+//       }
+//       .hero-text {
+//         padding: $side-padding + 100 $side-padding;
+//         h1 {
+//           font-size: 7rem;
+//           color: #ccc;
+//           font-weight: 600;
+//           line-height: 120px;
+//           max-width: 600px;
+//           max-height: 180px;
+//         }
+//         p {
+//           color: #ccc;
+//           font-weight: 400;
+//           line-height: 25px;
+//           font-size: 18px;
+//           padding-top: 60px;
+//         }
+//       }
+//     }
+//     // ==========starter section====================
 
-    .wrap-2 {
-      height: 1200px;
-      // background: #ccc;
-      .flexbox-2 {
-        @include flexing();
-        .col-3 {
-          max-width: 600px;
-          margin: 150px 0 30px 500px;
-          h2 {
-            font-size: $text-heading-size + 40px;
-            text-align: center;
-            font-weight: 600px;
-            line-height: 80px;
-          }
-          p {
-            font-size: $text-para-size;
-            font-weight: 400px;
-            line-height: 25px;
-          }
-        }
-        .col-4 {
-          max-width: 400px;
-          img {
-            width: 400px;
-          }
-        }
-      }
-      .flexbox-3 {
-        @include flexing();
-        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
-        .col-5 {
-          max-width: 500px;
-          img {
-            width: 600px;
-          }
-          .row {
-            margin-bottom: 150px;
-            p {
-              font-size: $text-para-size;
-              border-bottom: 1px dashed #123;
-              text-align: right;
-              line-height: 25px;
-              font-weight: 400;
-            }
-            h4 {
-              font-size: $text-heading-size + 15px;
-              line-height: 50px;
-              padding-bottom: 20px;
-              font-weight: 600px;
-            }
-            small {
-              font-size: $text-para-size;
-              line-height: 25px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
+//     .wrap-2 {
+//       height: 1200px;
+//       // background: #ccc;
+//       .flexbox-2 {
+//         @include flexing();
+//         .col-3 {
+//           max-width: 600px;
+//           margin: 150px 0 30px 500px;
+//           h2 {
+//             font-size: $text-heading-size + 40px;
+//             text-align: center;
+//             font-weight: 600px;
+//             line-height: 80px;
+//           }
+//           p {
+//             font-size: $text-para-size;
+//             font-weight: 400px;
+//             line-height: 25px;
+//           }
+//         }
+//         .col-4 {
+//           max-width: 400px;
+//           img {
+//             width: 400px;
+//           }
+//         }
+//       }
+//       .flexbox-3 {
+//         @include flexing();
+//         padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+//         .col-5 {
+//           max-width: 500px;
+//           img {
+//             width: 600px;
+//           }
+//           .row {
+//             margin-bottom: 150px;
+//             p {
+//               font-size: $text-para-size;
+//               border-bottom: 1px dashed #123;
+//               text-align: right;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//             h4 {
+//               font-size: $text-heading-size + 15px;
+//               line-height: 50px;
+//               padding-bottom: 20px;
+//               font-weight: 600px;
+//             }
+//             small {
+//               font-size: $text-para-size;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    // ========main section=========================
+//     // ========main section=========================
 
-    .wrap-3 {
-      height: 1200px;
-      background: white;
-      // background: #ccc;
-      h2 {
-        font-size: $text-heading-size + 40px;
-        padding: 100px 0 20px 0;
-        text-align: center;
-        font-weight: 600px;
-        line-height: 80px;
-      }
-      .heading-text {
-        font-size: $text-para-size;
-        font-weight: 400px;
-        line-height: 25px;
-        text-align: center;
-        padding-bottom: 50px;
-      }
-      .flexbox-4 {
-        @include flexing();
-        padding: $side-padding $side-padding $side-padding $side-padding + 80px;
-        .col-6 {
-          max-width: 600px;
-          img {
-            width: 600px;
-          }
-          .row {
-            margin-bottom: 150px;
-            p {
-              font-size: $text-para-size;
-              border-bottom: 1px dashed #123;
-              text-align: right;
-              line-height: 25px;
-              font-weight: 400;
-            }
-            h4 {
-              font-size: $text-heading-size + 15px;
-              line-height: 50px;
-              padding-bottom: 10px;
-              font-weight: 600px;
-            }
-            small {
-              font-size: $text-para-size;
-              line-height: 25px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
+//     .wrap-3 {
+//       height: 1200px;
+//       background: white;
+//       // background: #ccc;
+//       h2 {
+//         font-size: $text-heading-size + 40px;
+//         padding: 100px 0 20px 0;
+//         text-align: center;
+//         font-weight: 600px;
+//         line-height: 80px;
+//       }
+//       .heading-text {
+//         font-size: $text-para-size;
+//         font-weight: 400px;
+//         line-height: 25px;
+//         text-align: center;
+//         padding-bottom: 50px;
+//       }
+//       .flexbox-4 {
+//         @include flexing();
+//         padding: $side-padding $side-padding $side-padding $side-padding + 80px;
+//         .col-6 {
+//           max-width: 600px;
+//           img {
+//             width: 600px;
+//           }
+//           .row {
+//             margin-bottom: 150px;
+//             p {
+//               font-size: $text-para-size;
+//               border-bottom: 1px dashed #123;
+//               text-align: right;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//             h4 {
+//               font-size: $text-heading-size + 15px;
+//               line-height: 50px;
+//               padding-bottom: 10px;
+//               font-weight: 600px;
+//             }
+//             small {
+//               font-size: $text-para-size;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    // =======pastiries and drink section============
+//     // =======pastiries and drink section============
 
-    .wrap-4 {
-      height: 1200px;
-      // background: #ccc;
-      h2 {
-        font-size: $text-heading-size + 40px;
-        padding: 100px 0 20px 0;
-        text-align: center;
-        font-weight: 600px;
-        line-height: 80px;
-      }
-      .heading-text {
-        font-size: $text-para-size;
-        font-weight: 400px;
-        line-height: 25px;
-        text-align: center;
-        padding-bottom: 50px;
-      }
+//     .wrap-4 {
+//       height: 1200px;
+//       // background: #ccc;
+//       h2 {
+//         font-size: $text-heading-size + 40px;
+//         padding: 100px 0 20px 0;
+//         text-align: center;
+//         font-weight: 600px;
+//         line-height: 80px;
+//       }
+//       .heading-text {
+//         font-size: $text-para-size;
+//         font-weight: 400px;
+//         line-height: 25px;
+//         text-align: center;
+//         padding-bottom: 50px;
+//       }
 
-      .flexbox-5 {
-        @include flexing();
-        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
-        .col-7 {
-          max-width: 500px;
-          img {
-            width: 600px;
-          }
-          .row {
-            margin-bottom: 150px;
-            p {
-              font-size: $text-para-size;
-              border-bottom: 1px dashed #123;
-              line-height: 25px;
-              text-align: right;
-              font-weight: 400;
-            }
-            h4 {
-              font-size: $text-heading-size + 20px;
-              line-height: 50px;
-              padding-bottom: 10px;
-              font-weight: 600px;
-            }
-            small {
-              font-size: $text-para-size;
-              line-height: 25px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
+//       .flexbox-5 {
+//         @include flexing();
+//         padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+//         .col-7 {
+//           max-width: 500px;
+//           img {
+//             width: 600px;
+//           }
+//           .row {
+//             margin-bottom: 150px;
+//             p {
+//               font-size: $text-para-size;
+//               border-bottom: 1px dashed #123;
+//               line-height: 25px;
+//               text-align: right;
+//               font-weight: 400;
+//             }
+//             h4 {
+//               font-size: $text-heading-size + 20px;
+//               line-height: 50px;
+//               padding-bottom: 10px;
+//               font-weight: 600px;
+//             }
+//             small {
+//               font-size: $text-para-size;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    // ========make reservation section==============
+//     // ========make reservation section==============
 
-    .wrap-6 {
-      height: 900px;
-      background: rgb(228, 240, 245);
-      text-align: center;
-      h1 {
-        font-size: $text-heading-size + 30px;
-        padding: 200px 0 20px 0;
-        line-height: 40px;
-      }
-      small {
-        font-size: $text-para-size;
-        line-height: 50px;
-      }
-      .col-9 {
-        padding: 100px 50px;
-        .all-input {
-          @include flexing();
-          margin-top: 50px;
-          input {
-            width: 420px;
-            height: 80px;
-            padding: 8px 5;
-            border-radius: 2px;
-            background: white;
-            border: transparent;
-            font-size: $text-para-size - 3;
-          }
-          select {
-            width: 420px;
-            height: 80px;
-            padding: 8px 5;
-            border-radius: 2px;
-            background: white;
-            border: transparent;
-            font-size: $text-para-size - 3;
-          }
-        }
+//     .wrap-6 {
+//       height: 900px;
+//       background: rgb(228, 240, 245);
+//       text-align: center;
+//       h1 {
+//         font-size: $text-heading-size + 30px;
+//         padding: 200px 0 20px 0;
+//         line-height: 40px;
+//       }
+//       small {
+//         font-size: $text-para-size;
+//         line-height: 50px;
+//       }
+//       .col-9 {
+//         padding: 100px 50px;
+//         .all-input {
+//           @include flexing();
+//           margin-top: 50px;
+//           input {
+//             width: 420px;
+//             height: 80px;
+//             padding: 8px 5;
+//             border-radius: 2px;
+//             background: white;
+//             border: transparent;
+//             font-size: $text-para-size - 3;
+//           }
+//           select {
+//             width: 420px;
+//             height: 80px;
+//             padding: 8px 5;
+//             border-radius: 2px;
+//             background: white;
+//             border: transparent;
+//             font-size: $text-para-size - 3;
+//           }
+//         }
 
-        button {
-          width: 200px;
-          height: 80px;
-          background: $bg-color;
-          color: white;
-          font-size: $text-para-size;
-          font-style: italic;
-          margin-top: 100px;
-          cursor: pointer;
-        }
-      }
-    }
+//         button {
+//           width: 200px;
+//           height: 80px;
+//           background: $bg-color;
+//           color: white;
+//           font-size: $text-para-size;
+//           font-style: italic;
+//           margin-top: 100px;
+//           cursor: pointer;
+//         }
+//       }
+//     }
 
-    // ===========footer section========================
+//     // ===========footer section========================
 
-    footer {
-      height: 550px;
-      background: $bg-color;
-      padding: 150px 50px;
-      .flexbox-11 {
-        @include flexing();
-        border-bottom: 2px dashed white;
-        .col-12 {
-          min-width: 400px;
-          margin: 0 0 100px 0;
-          h1 {
-            font-size: $text-heading-size + 30px;
-            font-weight: $text-weight + 300;
-            color: white;
-          }
-          h4 {
-            font-size: $text-heading-size;
-            font-weight: $text-weight + 200;
-            color: white;
-            margin: 0 0 50px 0;
-          }
-          p {
-            font-size: $text-para-size;
-            font-weight: $text-weight - 300px;
-            color: white;
-            line-height: 25px;
-          }
-          a {
-            text-decoration: none;
-            color: white;
-            // line-height: 80px;
-            margin-bottom: 50px;
-          }
-          .address {
-            margin: 30px 0 0 0;
-          }
-          input {
-            width: 350px;
-            height: 60px;
-            border: transparent;
-            background: white;
-            color: black;
-            padding: 5px 10px;
-          }
-          button {
-            width: 200px;
-            height: 60px;
-            padding: 5px 10px;
-            background: #5e6600;
-            border: transparent;
-            cursor: pointer;
-            font-size: $text-para-size;
-            // box-shadow: 0 0 2px;
-          }
-          small {
-            font-size: $text-para-size;
-            line-height: 30px;
-            color: white;
-          }
-        }
-      }
-      .visit {
-        @include flexing();
-        margin: 10px 0 0 0;
-        small {
-          font-size: $text-para-size;
-          color: white;
-          cursor: pointer;
-        }
-        .platforms {
-          max-width: 500px;
-          @include flexing();
-          flex-direction: row;
-          column-gap: 30px;
-          .fa-brands {
-            color: white;
-            font-size: $text-para-size + 20px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-}
+//     footer {
+//       height: 550px;
+//       background: $bg-color;
+//       padding: 150px 50px;
+//       .flexbox-11 {
+//         @include flexing();
+//         border-bottom: 2px dashed white;
+//         .col-12 {
+//           min-width: 400px;
+//           margin: 0 0 100px 0;
+//           h1 {
+//             font-size: $text-heading-size + 30px;
+//             font-weight: $text-weight + 300;
+//             color: white;
+//           }
+//           h4 {
+//             font-size: $text-heading-size;
+//             font-weight: $text-weight + 200;
+//             color: white;
+//             margin: 0 0 50px 0;
+//           }
+//           p {
+//             font-size: $text-para-size;
+//             font-weight: $text-weight - 300px;
+//             color: white;
+//             line-height: 25px;
+//           }
+//           a {
+//             text-decoration: none;
+//             color: white;
+//             // line-height: 80px;
+//             margin-bottom: 50px;
+//           }
+//           .address {
+//             margin: 30px 0 0 0;
+//           }
+//           input {
+//             width: 350px;
+//             height: 60px;
+//             border: transparent;
+//             background: white;
+//             color: black;
+//             padding: 5px 10px;
+//           }
+//           button {
+//             width: 200px;
+//             height: 60px;
+//             padding: 5px 10px;
+//             background: #5e6600;
+//             border: transparent;
+//             cursor: pointer;
+//             font-size: $text-para-size;
+//             // box-shadow: 0 0 2px;
+//           }
+//           small {
+//             font-size: $text-para-size;
+//             line-height: 30px;
+//             color: white;
+//           }
+//         }
+//       }
+//       .visit {
+//         @include flexing();
+//         margin: 10px 0 0 0;
+//         small {
+//           font-size: $text-para-size;
+//           color: white;
+//           cursor: pointer;
+//         }
+//         .platforms {
+//           max-width: 500px;
+//           @include flexing();
+//           flex-direction: row;
+//           column-gap: 30px;
+//           .fa-brands {
+//             color: white;
+//             font-size: $text-para-size + 20px;
+//             cursor: pointer;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-// -SM
+// // -SM
 
-@media (max-width: 1500px) {
-  .container {
-    margin: 0;
-    border: $border-solid red;
-    width: $container-width;
-    height: $container-height;
+// @media (max-width: 1500px) {
+//   .container {
+//     margin: 0;
+//     border: $border-solid red;
+//     width: $container-width;
+//     height: $container-height;
 
-    // =============header section==================
+//     // =============header section==================
 
-    .wrap-1 {
-      font-family: $font-family;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../images/background-img.png);
-      width: 100%;
-      background-size: cover;
-      height: 700px;
-      .flexbox-1 {
-        @include flexing();
-        padding: $side-padding - 20px $side-padding;
-        // flex-wrap: wrap;
-        .col-1 {
-          max-width: 300px;
-          @include flexing();
-          gap: $flex-gap;
+//     .wrap-1 {
+//       font-family: $font-family;
+//       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+//         url(../images/background-img.png);
+//       width: 100%;
+//       background-size: cover;
+//       height: 700px;
+//       .flexbox-1 {
+//         @include flexing();
+//         padding: $side-padding - 20px $side-padding;
+//         // flex-wrap: wrap;
+//         .col-1 {
+//           max-width: 300px;
+//           @include flexing();
+//           gap: $flex-gap;
 
-          h2 {
-            font-size: $text-heading-size;
-            font-weight: $text-weight + 300;
-            text-align: center;
-            z-index: 1;
-            position: relative;
-            color: white;
-            &::after {
-              content: "";
-              width: 100px;
-              height: 60px;
-              position: absolute;
-              border: 1px solid white;
-              left: -0px;
-              margin-left: 25px;
-              bottom: -15px;
-            }
-          }
+//           h2 {
+//             font-size: $text-heading-size;
+//             font-weight: $text-weight + 300;
+//             text-align: center;
+//             z-index: 1;
+//             position: relative;
+//             color: white;
+//             &::after {
+//               content: "";
+//               width: 100px;
+//               height: 60px;
+//               position: absolute;
+//               border: 1px solid white;
+//               left: -0px;
+//               margin-left: 25px;
+//               bottom: -15px;
+//             }
+//           }
 
-          .fa-bars {
-            width: 50px;
-            padding-top: 15px;
-            color: #ccc;
-            cursor: pointer;
-            position: $myrelative-p;
-          }
-          .bars-content {
-            @include navigationbar;
-            .blog-link a {
-              color: yellow;
-            }
-            ul li {
-              list-style-type: none;
-              padding: 12px;
-              a {
-                text-decoration: none;
-                color: white;
-                font-size: $text-para-size;
-                font-weight: $text-weight;
-                &:hover {
-                  background: white;
-                  color: black;
-                }
-              }
-            }
-            .blog-content {
-              padding-left: $side-padding - 10px;
-              // display: none;
-              ul li {
-                padding: 3px;
-                a {
-                  font-size: $text-para-size - 3px;
-                }
-              }
-            }
-          }
-        }
-        .col-2 {
-          max-width: 400px;
-          .reservation-texts {
-            @include flexing();
-            justify-content: center;
-            align-items: center;
-            column-gap: 50px;
-            color: white;
-            padding: 0 70px;
-            font-size: $text-para-size;
-            font-weight: $text-weight;
-            a {
-              padding: 8px 25px;
-              color: white;
-              border: 1px solid white;
-              text-decoration: none;
-              // color: black;
-            }
-          }
-        }
-      }
-      .hero-text {
-        padding: $side-padding + 100 $side-padding;
-        h1 {
-          font-size: 7rem;
-          color: #ccc;
-          font-weight: 600;
-          line-height: 120px;
-          max-width: 600px;
-          max-height: 180px;
-        }
-        p {
-          color: #ccc;
-          font-weight: 400;
-          line-height: 25px;
-          font-size: 18px;
-          padding-top: 60px;
-        }
-      }
-    }
-    // ==========starter section====================
+//           .fa-bars {
+//             width: 50px;
+//             padding-top: 15px;
+//             color: #ccc;
+//             cursor: pointer;
+//             position: $myrelative-p;
+//           }
+//           .bars-content {
+//             @include navigationbar;
+//             .blog-link a {
+//               color: yellow;
+//             }
+//             ul li {
+//               list-style-type: none;
+//               padding: 12px;
+//               a {
+//                 text-decoration: none;
+//                 color: white;
+//                 font-size: $text-para-size;
+//                 font-weight: $text-weight;
+//                 &:hover {
+//                   background: white;
+//                   color: black;
+//                 }
+//               }
+//             }
+//             .blog-content {
+//               padding-left: $side-padding - 10px;
+//               // display: none;
+//               ul li {
+//                 padding: 3px;
+//                 a {
+//                   font-size: $text-para-size - 3px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//         .col-2 {
+//           max-width: 400px;
+//           .reservation-texts {
+//             @include flexing();
+//             justify-content: center;
+//             align-items: center;
+//             column-gap: 50px;
+//             color: white;
+//             padding: 0 70px;
+//             font-size: $text-para-size;
+//             font-weight: $text-weight;
+//             a {
+//               padding: 8px 25px;
+//               color: white;
+//               border: 1px solid white;
+//               text-decoration: none;
+//               // color: black;
+//             }
+//           }
+//         }
+//       }
+//       .hero-text {
+//         padding: $side-padding + 100 $side-padding;
+//         h1 {
+//           font-size: 7rem;
+//           color: #ccc;
+//           font-weight: 600;
+//           line-height: 120px;
+//           max-width: 600px;
+//           max-height: 180px;
+//         }
+//         p {
+//           color: #ccc;
+//           font-weight: 400;
+//           line-height: 25px;
+//           font-size: 18px;
+//           padding-top: 60px;
+//         }
+//       }
+//     }
+//     // ==========starter section====================
 
-    .wrap-2 {
-      height: 1200px;
-      // background: #ccc;
-      .flexbox-2 {
-        @include flexing();
-        .col-3 {
-          max-width: 600px;
-          margin: 150px 0 30px 500px;
-          h2 {
-            font-size: $text-heading-size + 40px;
-            text-align: center;
-            font-weight: 600px;
-            line-height: 80px;
-          }
-          p {
-            font-size: $text-para-size;
-            font-weight: 400px;
-            line-height: 25px;
-          }
-        }
-        .col-4 {
-          max-width: 400px;
-          img {
-            width: 400px;
-          }
-        }
-      }
-      .flexbox-3 {
-        @include flexing();
-        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
-        .col-5 {
-          max-width: 500px;
-          img {
-            width: 600px;
-          }
-          .row {
-            margin-bottom: 150px;
-            p {
-              font-size: $text-para-size;
-              border-bottom: 1px dashed #123;
-              text-align: right;
-              line-height: 25px;
-              font-weight: 400;
-            }
-            h4 {
-              font-size: $text-heading-size + 15px;
-              line-height: 50px;
-              padding-bottom: 20px;
-              font-weight: 600px;
-            }
-            small {
-              font-size: $text-para-size;
-              line-height: 25px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
+//     .wrap-2 {
+//       height: 1200px;
+//       // background: #ccc;
+//       .flexbox-2 {
+//         @include flexing();
+//         .col-3 {
+//           max-width: 600px;
+//           margin: 150px 0 30px 500px;
+//           h2 {
+//             font-size: $text-heading-size + 40px;
+//             text-align: center;
+//             font-weight: 600px;
+//             line-height: 80px;
+//           }
+//           p {
+//             font-size: $text-para-size;
+//             font-weight: 400px;
+//             line-height: 25px;
+//           }
+//         }
+//         .col-4 {
+//           max-width: 400px;
+//           img {
+//             width: 400px;
+//           }
+//         }
+//       }
+//       .flexbox-3 {
+//         @include flexing();
+//         padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+//         .col-5 {
+//           max-width: 500px;
+//           img {
+//             width: 600px;
+//           }
+//           .row {
+//             margin-bottom: 150px;
+//             p {
+//               font-size: $text-para-size;
+//               border-bottom: 1px dashed #123;
+//               text-align: right;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//             h4 {
+//               font-size: $text-heading-size + 15px;
+//               line-height: 50px;
+//               padding-bottom: 20px;
+//               font-weight: 600px;
+//             }
+//             small {
+//               font-size: $text-para-size;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    // ========main section=========================
+//     // ========main section=========================
 
-    .wrap-3 {
-      height: 1200px;
-      background: white;
-      // background: #ccc;
-      h2 {
-        font-size: $text-heading-size + 40px;
-        padding: 100px 0 20px 0;
-        text-align: center;
-        font-weight: 600px;
-        line-height: 80px;
-      }
-      .heading-text {
-        font-size: $text-para-size;
-        font-weight: 400px;
-        line-height: 25px;
-        text-align: center;
-        padding-bottom: 50px;
-      }
-      .flexbox-4 {
-        @include flexing();
-        padding: $side-padding $side-padding $side-padding $side-padding + 80px;
-        .col-6 {
-          max-width: 600px;
-          img {
-            width: 600px;
-          }
-          .row {
-            margin-bottom: 150px;
-            p {
-              font-size: $text-para-size;
-              border-bottom: 1px dashed #123;
-              text-align: right;
-              line-height: 25px;
-              font-weight: 400;
-            }
-            h4 {
-              font-size: $text-heading-size + 15px;
-              line-height: 50px;
-              padding-bottom: 10px;
-              font-weight: 600px;
-            }
-            small {
-              font-size: $text-para-size;
-              line-height: 25px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
+//     .wrap-3 {
+//       height: 1200px;
+//       background: white;
+//       // background: #ccc;
+//       h2 {
+//         font-size: $text-heading-size + 40px;
+//         padding: 100px 0 20px 0;
+//         text-align: center;
+//         font-weight: 600px;
+//         line-height: 80px;
+//       }
+//       .heading-text {
+//         font-size: $text-para-size;
+//         font-weight: 400px;
+//         line-height: 25px;
+//         text-align: center;
+//         padding-bottom: 50px;
+//       }
+//       .flexbox-4 {
+//         @include flexing();
+//         padding: $side-padding $side-padding $side-padding $side-padding + 80px;
+//         .col-6 {
+//           max-width: 600px;
+//           img {
+//             width: 600px;
+//           }
+//           .row {
+//             margin-bottom: 150px;
+//             p {
+//               font-size: $text-para-size;
+//               border-bottom: 1px dashed #123;
+//               text-align: right;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//             h4 {
+//               font-size: $text-heading-size + 15px;
+//               line-height: 50px;
+//               padding-bottom: 10px;
+//               font-weight: 600px;
+//             }
+//             small {
+//               font-size: $text-para-size;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    // =======pastiries and drink section============
+//     // =======pastiries and drink section============
 
-    .wrap-4 {
-      height: 1200px;
-      // background: #ccc;
-      h2 {
-        font-size: $text-heading-size + 40px;
-        padding: 100px 0 20px 0;
-        text-align: center;
-        font-weight: 600px;
-        line-height: 80px;
-      }
-      .heading-text {
-        font-size: $text-para-size;
-        font-weight: 400px;
-        line-height: 25px;
-        text-align: center;
-        padding-bottom: 50px;
-      }
+//     .wrap-4 {
+//       height: 1200px;
+//       // background: #ccc;
+//       h2 {
+//         font-size: $text-heading-size + 40px;
+//         padding: 100px 0 20px 0;
+//         text-align: center;
+//         font-weight: 600px;
+//         line-height: 80px;
+//       }
+//       .heading-text {
+//         font-size: $text-para-size;
+//         font-weight: 400px;
+//         line-height: 25px;
+//         text-align: center;
+//         padding-bottom: 50px;
+//       }
 
-      .flexbox-5 {
-        @include flexing();
-        padding: $side-padding $side-padding + 100px $side-padding $side-padding;
-        .col-7 {
-          max-width: 500px;
-          img {
-            width: 600px;
-          }
-          .row {
-            margin-bottom: 150px;
-            p {
-              font-size: $text-para-size;
-              border-bottom: 1px dashed #123;
-              line-height: 25px;
-              text-align: right;
-              font-weight: 400;
-            }
-            h4 {
-              font-size: $text-heading-size + 20px;
-              line-height: 50px;
-              padding-bottom: 10px;
-              font-weight: 600px;
-            }
-            small {
-              font-size: $text-para-size;
-              line-height: 25px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
+//       .flexbox-5 {
+//         @include flexing();
+//         padding: $side-padding $side-padding + 100px $side-padding $side-padding;
+//         .col-7 {
+//           max-width: 500px;
+//           img {
+//             width: 600px;
+//           }
+//           .row {
+//             margin-bottom: 150px;
+//             p {
+//               font-size: $text-para-size;
+//               border-bottom: 1px dashed #123;
+//               line-height: 25px;
+//               text-align: right;
+//               font-weight: 400;
+//             }
+//             h4 {
+//               font-size: $text-heading-size + 20px;
+//               line-height: 50px;
+//               padding-bottom: 10px;
+//               font-weight: 600px;
+//             }
+//             small {
+//               font-size: $text-para-size;
+//               line-height: 25px;
+//               font-weight: 400;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    // ========make reservation section==============
+//     // ========make reservation section==============
 
-    .wrap-6 {
-      height: 900px;
-      background: rgb(228, 240, 245);
-      text-align: center;
-      h1 {
-        font-size: $text-heading-size + 30px;
-        padding: 200px 0 20px 0;
-        line-height: 40px;
-      }
-      small {
-        font-size: $text-para-size;
-        line-height: 50px;
-      }
-      .col-9 {
-        padding: 100px 50px;
-        .all-input {
-          @include flexing();
-          margin-top: 50px;
-          input {
-            width: 420px;
-            height: 80px;
-            padding: 8px 5;
-            border-radius: 2px;
-            background: white;
-            border: transparent;
-            font-size: $text-para-size - 3;
-          }
-          select {
-            width: 420px;
-            height: 80px;
-            padding: 8px 5;
-            border-radius: 2px;
-            background: white;
-            border: transparent;
-            font-size: $text-para-size - 3;
-          }
-        }
+//     .wrap-6 {
+//       height: 900px;
+//       background: rgb(228, 240, 245);
+//       text-align: center;
+//       h1 {
+//         font-size: $text-heading-size + 30px;
+//         padding: 200px 0 20px 0;
+//         line-height: 40px;
+//       }
+//       small {
+//         font-size: $text-para-size;
+//         line-height: 50px;
+//       }
+//       .col-9 {
+//         padding: 100px 50px;
+//         .all-input {
+//           @include flexing();
+//           margin-top: 50px;
+//           input {
+//             width: 420px;
+//             height: 80px;
+//             padding: 8px 5;
+//             border-radius: 2px;
+//             background: white;
+//             border: transparent;
+//             font-size: $text-para-size - 3;
+//           }
+//           select {
+//             width: 420px;
+//             height: 80px;
+//             padding: 8px 5;
+//             border-radius: 2px;
+//             background: white;
+//             border: transparent;
+//             font-size: $text-para-size - 3;
+//           }
+//         }
 
-        button {
-          width: 200px;
-          height: 80px;
-          background: $bg-color;
-          color: white;
-          font-size: $text-para-size;
-          font-style: italic;
-          margin-top: 100px;
-          cursor: pointer;
-        }
-      }
-    }
+//         button {
+//           width: 200px;
+//           height: 80px;
+//           background: $bg-color;
+//           color: white;
+//           font-size: $text-para-size;
+//           font-style: italic;
+//           margin-top: 100px;
+//           cursor: pointer;
+//         }
+//       }
+//     }
 
-    // ===========footer section========================
+//     // ===========footer section========================
 
-    footer {
-      height: 550px;
-      background: $bg-color;
-      padding: 150px 50px;
-      .flexbox-11 {
-        @include flexing();
-        border-bottom: 2px dashed white;
-        .col-12 {
-          min-width: 400px;
-          margin: 0 0 100px 0;
-          h1 {
-            font-size: $text-heading-size + 30px;
-            font-weight: $text-weight + 300;
-            color: white;
-          }
-          h4 {
-            font-size: $text-heading-size;
-            font-weight: $text-weight + 200;
-            color: white;
-            margin: 0 0 50px 0;
-          }
-          p {
-            font-size: $text-para-size;
-            font-weight: $text-weight - 300px;
-            color: white;
-            line-height: 25px;
-          }
-          a {
-            text-decoration: none;
-            color: white;
-            // line-height: 80px;
-            margin-bottom: 50px;
-          }
-          .address {
-            margin: 30px 0 0 0;
-          }
-          input {
-            width: 350px;
-            height: 60px;
-            border: transparent;
-            background: white;
-            color: black;
-            padding: 5px 10px;
-          }
-          button {
-            width: 200px;
-            height: 60px;
-            padding: 5px 10px;
-            background: #5e6600;
-            border: transparent;
-            cursor: pointer;
-            font-size: $text-para-size;
-            // box-shadow: 0 0 2px;
-          }
-          small {
-            font-size: $text-para-size;
-            line-height: 30px;
-            color: white;
-          }
-        }
-      }
-      .visit {
-        @include flexing();
-        margin: 10px 0 0 0;
-        small {
-          font-size: $text-para-size;
-          color: white;
-          cursor: pointer;
-        }
-        .platforms {
-          max-width: 500px;
-          @include flexing();
-          flex-direction: row;
-          column-gap: 30px;
-          .fa-brands {
-            color: white;
-            font-size: $text-para-size + 20px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-}
+//     footer {
+//       height: 550px;
+//       background: $bg-color;
+//       padding: 150px 50px;
+//       .flexbox-11 {
+//         @include flexing();
+//         border-bottom: 2px dashed white;
+//         .col-12 {
+//           min-width: 400px;
+//           margin: 0 0 100px 0;
+//           h1 {
+//             font-size: $text-heading-size + 30px;
+//             font-weight: $text-weight + 300;
+//             color: white;
+//           }
+//           h4 {
+//             font-size: $text-heading-size;
+//             font-weight: $text-weight + 200;
+//             color: white;
+//             margin: 0 0 50px 0;
+//           }
+//           p {
+//             font-size: $text-para-size;
+//             font-weight: $text-weight - 300px;
+//             color: white;
+//             line-height: 25px;
+//           }
+//           a {
+//             text-decoration: none;
+//             color: white;
+//             // line-height: 80px;
+//             margin-bottom: 50px;
+//           }
+//           .address {
+//             margin: 30px 0 0 0;
+//           }
+//           input {
+//             width: 350px;
+//             height: 60px;
+//             border: transparent;
+//             background: white;
+//             color: black;
+//             padding: 5px 10px;
+//           }
+//           button {
+//             width: 200px;
+//             height: 60px;
+//             padding: 5px 10px;
+//             background: #5e6600;
+//             border: transparent;
+//             cursor: pointer;
+//             font-size: $text-para-size;
+//             // box-shadow: 0 0 2px;
+//           }
+//           small {
+//             font-size: $text-para-size;
+//             line-height: 30px;
+//             color: white;
+//           }
+//         }
+//       }
+//       .visit {
+//         @include flexing();
+//         margin: 10px 0 0 0;
+//         small {
+//           font-size: $text-para-size;
+//           color: white;
+//           cursor: pointer;
+//         }
+//         .platforms {
+//           max-width: 500px;
+//           @include flexing();
+//           flex-direction: row;
+//           column-gap: 30px;
+//           .fa-brands {
+//             color: white;
+//             font-size: $text-para-size + 20px;
+//             cursor: pointer;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
